@@ -1,0 +1,1449 @@
+<html>
+	<head>
+		<head>
+			<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+			<!-- <link rel="stylesheet" type="text/css" href="C:\Users\J-Computer\Desktop\LabBootstrap\bootstrap.min.css"> -->
+			<style type="text/css">
+				.well{
+					text-align: center;
+				}
+				/*.nav-tabs{
+				  	background-color:#337ab7;
+				}*/
+				.height_input{
+				height: 15%;
+				}
+				.width_normalbutton0{
+					width: 52%;
+				}
+				.width_normalbutton{
+					width: 17%;
+				}
+				.width_markbutton{
+					width: 15%;
+				}
+				.width_deletebutton{
+					width: 15%;
+				}
+				.sup {
+				  	position: relative;
+				  	bottom: 1ex; 
+				  	font-size: 80%;
+				}
+				.rainbow {
+				    background: red; /* not working, let's see some red */
+				    background: -moz-linear-gradient( top ,
+				        rgba(255, 0, 0, 1) 0%,
+				        rgba(255, 255, 0, 1) 15%,
+				        rgba(0, 255, 0, 1) 30%,
+				        rgba(0, 255, 255, 1) 50%,
+				        rgba(0, 0, 255, 1) 65%,
+				        rgba(255, 0, 255, 1) 80%,
+				        rgba(255, 0, 0, 1) 100%);
+				    background: -webkit-gradient(linear,  left top,  left bottom, 
+				        color-stop(0%, rgba(255, 0, 0, 1)), 
+				        color-stop(15%, rgba(255, 255, 0, 1)),
+				        color-stop(30%, rgba(0, 255, 0, 1)),
+				        color-stop(50%, rgba(0, 255, 255, 1)),
+				        color-stop(65%, rgba(0, 0, 255, 1)),
+				        color-stop(80%, rgba(255, 0, 255, 1)),
+				        color-stop(100%, rgba(255, 0, 0, 1)));
+				}
+			</style>
+		</head>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" >
+								 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+							</button> <a class="navbar-brand" href="#">Brand</a>
+						</div>
+						
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<!-- <li class="active">
+									<a href="#">Link</a>
+								</li> -->
+								<li>
+									<a href="#">Link</a>
+								</li>
+								<li class="dropdown">
+									 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#">Action</a>
+										</li>
+										<li>
+											<a href="#">Another action</a>
+										</li>
+										<li>
+											<a href="#">Something else here</a>
+										</li>
+										<li class="divider">
+										</li>
+										<li>
+											<a href="#">Separated link</a>
+										</li>
+										<li class="divider">
+										</li>
+										<li>
+											<a href="#">One more separated link</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<form class="navbar-form navbar-left" role="search">
+								<div class="form-group">
+									<input class="form-control" type="text" />
+								</div> 
+								<button type="submit" class="btn btn-default">
+									Submit
+								</button>
+							</form>
+							<ul class="nav navbar-nav navbar-right">
+								<!-- <li>
+									<a href="#">Link</a>
+								</li> -->
+								<li class="dropdown">
+									 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#">Action</a>
+										</li>
+										<li>
+											<a href="#">Another action</a>
+										</li>
+										<li>
+											<a href="#">Something else here</a>
+										</li>
+										<li class="divider">
+										</li>
+										<li>
+											<a href="#">Separated link</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<div class="row">
+				<div class="col-md-12">
+					<ol class="breadcrumb">
+	                    <li>Lab Bootstrap</li>
+	                    <li class="active">Example</li>
+	                </ol>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="tabbable" id="tabs-664704">
+						<ul class="nav nav-tabs">
+							<li class="active">
+								<a href="#panel-layout" data-toggle="tab">Layout</a>
+							</li>
+							<li>
+								<a href="#panel-element" data-toggle="tab">Element</a>
+							</li>
+							<li>
+								<a href="#panel-available" data-toggle="tab">Available Class</a>
+							</li>
+							<li>
+								<a href="#panel-jquery" data-toggle="tab">jQuery</a>
+							</li>
+							<li>
+								<a href="#panel-calculator" data-toggle="tab">Calculator</a>
+							</li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="panel-layout">
+								<p>
+									<div class="panel panel-primary">
+										<div class="panel-heading">
+											<h3 class="panel-title">
+												Grid System
+											</h3>
+										</div>
+										<div class="panel-body">
+											XS
+											<div class="row">
+												<div class="col-xs-1"><div class="well">1</div></div>
+												<div class="col-xs-1"><div class="well">2</div></div>
+												<div class="col-xs-1"><div class="well">3</div></div>
+												<div class="col-xs-1"><div class="well">4</div></div>
+												<div class="col-xs-1"><div class="well">5</div></div>
+												<div class="col-xs-1"><div class="well">6</div></div>
+												<div class="col-xs-1"><div class="well">7</div></div>
+												<div class="col-xs-1"><div class="well">8</div></div>
+												<div class="col-xs-1"><div class="well">9</div></div>
+												<div class="col-xs-1"><div class="well">10</div></div>
+												<div class="col-xs-1"><div class="well">11</div></div>
+												<div class="col-xs-1"><div class="well">12</div></div>
+											</div>
+
+											SM
+											<div class="row">
+												<div class="col-sm-1"><div class="well">1</div></div>
+												<div class="col-sm-1"><div class="well">2</div></div>
+												<div class="col-sm-1"><div class="well">3</div></div>
+												<div class="col-sm-1"><div class="well">4</div></div>
+												<div class="col-sm-1"><div class="well">5</div></div>
+												<div class="col-sm-1"><div class="well">6</div></div>
+												<div class="col-sm-1"><div class="well">7</div></div>
+												<div class="col-sm-1"><div class="well">8</div></div>
+												<div class="col-sm-1"><div class="well">9</div></div>
+												<div class="col-sm-1"><div class="well">10</div></div>
+												<div class="col-sm-1"><div class="well">11</div></div>
+												<div class="col-sm-1"><div class="well">12</div></div>
+											</div>
+
+											MD
+											<div class="row">
+												<div class="col-md-1"><div class="well">1</div></div>
+												<div class="col-md-1"><div class="well">2</div></div>
+												<div class="col-md-1"><div class="well">3</div></div>
+												<div class="col-md-1"><div class="well">4</div></div>
+												<div class="col-md-1"><div class="well">5</div></div>
+												<div class="col-md-1"><div class="well">6</div></div>
+												<div class="col-md-1"><div class="well">7</div></div>
+												<div class="col-md-1"><div class="well">8</div></div>
+												<div class="col-md-1"><div class="well">9</div></div>
+												<div class="col-md-1"><div class="well">10</div></div>
+												<div class="col-md-1"><div class="well">11</div></div>
+												<div class="col-md-1"><div class="well">12</div></div>
+											</div>
+
+											LG
+											<div class="row">
+												<div class="col-lg-1"><div class="well">1</div></div>
+												<div class="col-lg-1"><div class="well">2</div></div>
+												<div class="col-lg-1"><div class="well">3</div></div>
+												<div class="col-lg-1"><div class="well">4</div></div>
+												<div class="col-lg-1"><div class="well">5</div></div>
+												<div class="col-lg-1"><div class="well">6</div></div>
+												<div class="col-lg-1"><div class="well">7</div></div>
+												<div class="col-lg-1"><div class="well">8</div></div>
+												<div class="col-lg-1"><div class="well">9</div></div>
+												<div class="col-lg-1"><div class="well">10</div></div>
+												<div class="col-lg-1"><div class="well">11</div></div>
+												<div class="col-lg-1"><div class="well">12</div></div>
+											</div>
+										</div>
+										<!-- <div class="panel-footer">
+											Panel footer
+										</div> -->
+									</div>
+								</p>
+							</div>
+							<div class="tab-pane" id="panel-element">
+								<p>
+									<div class="panel-group" id="panel-190557">
+										<div class="panel panel-primary">
+											<div class="panel-heading">
+												 <a class="panel-title" data-toggle="collapse" data-parent="#panel-190557" href="#panel-element-textfield">Textfield</a>
+											</div>
+											<div id="panel-element-textfield" class="panel-collapse collapse in">
+												<div class="panel-body">
+													<div class="col-sm-6">
+														<input class="form-control" type="text" placeholder="Textfield"/>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="panel panel-info">
+											<div class="panel-heading">
+												 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-190557" href="#panel-element-datefield">Datefield</a>
+											</div>
+											<div id="panel-element-datefield" class="panel-collapse collapse">
+												<div class="panel-body">
+													<div class="col-sm-6">
+														<input class="form-control" type="date"/>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="panel panel-success">
+											<div class="panel-heading">
+												 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-190557" href="#panel-element-button">Button</a>
+											</div>
+											<div id="panel-element-button" class="panel-collapse collapse">
+												<div class="panel-body">
+													<div class="col-sm-12">
+														<button class="btn btn-default" type="button">Default</button>
+														<button class="btn btn-primary" type="button">Primary</button>
+														<button class="btn btn-success" type="button">Success</button>
+														<button class="btn btn-info" type="button">Info</button>
+														<button class="btn btn-warning" type="button">Warning</button>
+														<button class="btn btn-danger" type="button">Danger</button>
+														<button class="btn btn-link" type="button">Link</button>
+													</div>
+													<br/>
+													<br/>
+													<div class="col-sm-12">
+														<button class="btn btn-default btn-lg" type="button">Default</button>
+														<button class="btn btn-primary btn-default" type="button">Primary</button>
+														<button class="btn btn-success btn-sm" type="button">Success</button>
+														<button class="btn btn-info btn-xs" type="button">Info</button>
+														<button class="btn btn-warning active" type="button">Warning</button>
+														<button class="btn btn-danger" disabled="true" type="button">Danger</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="panel panel-warning">
+											<div class="panel-heading">
+												 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-190557" href="#panel-element-text">Text</a>
+											</div>
+											<div id="panel-element-text" class="panel-collapse collapse">
+												<div class="panel-body">
+													<label class="control-label">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</label>
+												</div>
+											</div>
+										</div>
+										<div class="panel panel-danger">
+											<div class="panel-heading">
+												 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-190557" href="#panel-element-radio">Radio</a>
+											</div>
+											<div id="panel-element-radio" class="panel-collapse collapse">
+												<div class="panel-body">
+													<div class="col-sm-6">
+														<div class="radio">
+														  <label>
+														    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+														    Cat
+														  </label>
+														</div>
+														<div class="radio">
+														  <label>
+														    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+														    Dog
+														  </label>
+														</div>
+													</div>
+													<div class="col-sm-6">
+														<label class="radio-inline">
+														  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Cat
+														</label>
+														<label class="radio-inline">
+														  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Dog
+														</label>
+														<label class="radio-inline">
+														  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Tiger
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-190557" href="#panel-element-combobox">Checkbox</a>
+											</div>
+											<div id="panel-element-combobox" class="panel-collapse collapse">
+												<div class="panel-body">
+													<div class="col-sm-6">
+														<div class="checkbox">
+														  <label>
+														    <input type="checkbox" value="">
+														    Cat
+														  </label>
+														</div>
+														<div class="checkbox disabled">
+														  <label>
+														    <input type="checkbox" value="" disabled>
+														    Dog
+														  </label>
+														</div>
+													</div>
+													<div class="col-sm-6">
+														<label class="checkbox-inline">
+														  <input type="checkbox" id="inlineCheckbox1" value="option1"> Cat
+														</label>
+														<label class="checkbox-inline">
+														  <input type="checkbox" id="inlineCheckbox2" value="option2"> Dog
+														</label>
+														<label class="checkbox-inline">
+														  <input type="checkbox" id="inlineCheckbox3" value="option3"> Tiger
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="panel panel-info">
+											<div class="panel-heading">
+												 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-190557" href="#panel-element-file">File</a>
+											</div>
+											<div id="panel-element-file" class="panel-collapse collapse">
+												<div class="panel-body">
+													<div class="col-sm-6">
+														<!-- <input class="form-control" type="file"/> -->
+														<label for="exampleInputFile">
+															Choose file
+														</label>
+														<input id="exampleInputFile" type="file" />
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="panel panel-success">
+											<div class="panel-heading">
+												 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-190557" href="#panel-element-table">Table</a>
+											</div>
+											<div id="panel-element-table" class="panel-collapse collapse">
+												<div class="panel-body">
+													<div class="col-sm-6">
+														<div class="table-responsive">
+															<table class="table table-hover">
+															  <thead>
+															  		<th>No.</th>
+															  		<th>Firstname</th>
+															  		<th>Lastname</th>
+															  		<th>Nickname</th>
+															  </thead>
+															  <tbody>
+															  		<tr>
+															  			<td>1</td>
+															  			<td>Jaidee</td>
+															  			<td>Jingjing</td>
+															  			<td>Jai</td>
+															  		</tr>
+															  		<tr>
+															  			<td>2</td>
+															  			<td>Sawasdee</td>
+															  			<td>Eiei</td>
+															  			<td>Dee</td>
+															  		</tr>
+															  		<tr>
+															  			<td>3</td>
+															  			<td>Somjai</td>
+															  			<td>Teesud</td>
+															  			<td>Som</td>
+															  		</tr>
+															  </tbody>
+															</table>
+														</div>
+													</div>
+													<div class="col-sm-6">
+														<div class="table-responsive">
+															<table class="table table-bordered">
+															  	<thead>
+															  		<th>No.</th>
+															  		<th>Firstname</th>
+															  		<th>Lastname</th>
+															  		<th>Nickname</th>
+															  </thead>
+															  <tbody>
+															  		<tr>
+															  			<td>1</td>
+															  			<td>Jaidee</td>
+															  			<td>Jingjing</td>
+															  			<td>Jai</td>
+															  		</tr>
+															  		<tr>
+															  			<td>2</td>
+															  			<td>Sawasdee</td>
+															  			<td>Eiei</td>
+															  			<td>Dee</td>
+															  		</tr>
+															  		<tr>
+															  			<td>3</td>
+															  			<td>Somjai</td>
+															  			<td>Teesud</td>
+															  			<td>Som</td>
+															  		</tr>
+															  </tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="panel panel-danger">
+											<div class="panel-heading">
+												 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-190557" href="#panel-element-form">Form</a>
+											</div>
+											<div id="panel-element-form" class="panel-collapse collapse">
+												<div class="panel-body">
+													<div class="col-sm-12">
+														<div class="col-sm-6">
+															<form role="form">
+																<div class="form-group">
+																	 
+																	<label for="exampleInputEmail1">
+																		Email address
+																	</label>
+																	<input class="form-control" id="exampleInputEmail1" type="email" />
+																</div>
+																<div class="form-group">
+																	 
+																	<label for="exampleInputPassword1">
+																		Password
+																	</label>
+																	<input class="form-control" id="exampleInputPassword1" type="password" />
+																</div>
+																<button type="submit" class="btn btn-default">
+																	Submit
+																</button>
+															</form>
+														</div>
+														<div class="col-sm-6">
+															<form class="form-horizontal" role="form">
+																<div class="form-group">
+																	 
+																	<label for="inputEmail3" class="col-sm-2 control-label">
+																		Email
+																	</label>
+																	<div class="col-sm-10">
+																		<input class="form-control" id="inputEmail3" type="email" />
+																	</div>
+																</div>
+																<div class="form-group">
+																	 
+																	<label for="inputPassword3" class="col-sm-2 control-label">
+																		Password
+																	</label>
+																	<div class="col-sm-10">
+																		<input class="form-control" id="inputPassword3" type="password" />
+																	</div>
+																</div>
+																<div class="form-group">
+																	<div class="col-sm-offset-2 col-sm-10">
+																		<div class="checkbox">
+																			 
+																			<label>
+																				<input type="checkbox" /> Remember me
+																			</label>
+																		</div>
+																	</div>
+																</div>
+																<div class="form-group">
+																	<div class="col-sm-offset-2 col-sm-10">
+																		 
+																		<button type="submit" class="btn btn-default">
+																			Sign in
+																		</button>
+																	</div>
+																</div>
+															</form>
+														</div>
+													</div>
+													<div class="col-sm-12">
+														<div class="col-sm-8">
+															<label class="control-label">Inline</label>
+															<form class="form-inline">
+															  <div class="form-group">
+															    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+															    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+															  </div>
+															  <div class="form-group">
+															    <label class="sr-only" for="exampleInputPassword3">Password</label>
+															    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+															  </div>
+															  <div class="checkbox">
+															    <label>
+															      <input type="checkbox"> Remember me
+															    </label>
+															  </div>
+															  <button type="submit" class="btn btn-default">Sign in</button>
+															</form>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="panel panel-warning">
+											<div class="panel-heading">
+												 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-190557" href="#panel-element-modal">Modal</a>
+											</div>
+											<div id="panel-element-modal" class="panel-collapse collapse">
+												<div class="panel-body">
+													<div class="col-md-4">
+														 <button id="modal-447972" href="#modal-container-447972" type="button" class="btn btn-primary" data-toggle="modal">Modal Small</button>
+														
+														<div class="modal fade" id="modal-container-447972" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+															<div class="modal-dialog modal-sm">
+																<div class="modal-content">
+																	<div class="modal-header">
+																		<h4 class="modal-title" id="myModalLabel">
+																			Modal Small
+																		</h4>
+																	</div>
+																	<div class="modal-body">
+																		<label class="control-label"><span class="glyphicon glyphicon-sunglasses"></span> Hello World</label>
+																	</div>
+																	<div class="modal-footer">
+																		<button type="button" class="btn btn-primary">
+																			Save
+																		</button>
+																		<button type="button" class="btn btn-danger" data-dismiss="modal">
+																			Close
+																		</button> 
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-4">
+														 <button id="modal-1234" href="#modal-container-1234" type="button" class="btn btn-primary" data-toggle="modal">Modal Default</button>
+														
+														<div class="modal fade" id="modal-container-1234" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+															<div class="modal-dialog">
+																<div class="modal-content">
+																	<div class="modal-header">
+																		<h4 class="modal-title" id="myModalLabel">
+																			Modal default
+																		</h4>
+																	</div>
+																	<div class="modal-body">
+																		<a href="https://www.google.co.th/" target="_blank"><label class="control-label"><span class="glyphicon glyphicon-scissors"></span> Hello World</label></a>
+																	</div>
+																	<div class="modal-footer">
+																		<button type="button" class="btn btn-primary">
+																			Save
+																		</button>
+																		<button type="button" class="btn btn-danger" data-dismiss="modal">
+																			Close
+																		</button> 
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-4">
+														 <button id="modal-567" href="#modal-container-567" type="button" class="btn btn-primary" data-toggle="modal">Modal Large</button>
+														
+														<div class="modal fade" id="modal-container-567" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+															<div class="modal-dialog modal-lg">
+																<div class="modal-content">
+																	<div class="modal-header">
+																		<h4 class="modal-title" id="myModalLabel">
+																			<div class="alert alert-info alert-dismissable text-center" style="margin-bottom: 0px;">
+																				<h4>
+																					Modal Large
+																				</h4>
+																			</div>
+																		</h4>
+																	</div>
+																	<div class="modal-body">
+																		<form class="form-horizontal">
+																		  <div class="form-group">
+																		    <label for="inputEmail3" class="col-sm-2 control-label">Firstname</label>
+																		    <div class="col-sm-4">
+																		      <input type="email" class="form-control" id="inputEmail3" placeholder="Firstname">
+																		    </div>
+																		    <label for="inputPassword3" class="col-sm-1 control-label">Lastname</label>
+																		    <div class="col-sm-4">
+																		      <input type="password" class="form-control" id="inputPassword3" placeholder="Lastname">
+																		    </div>
+																		  </div>
+																		  <div class="form-group">
+																		    <label for="inputPassword3" class="col-sm-2 control-label">Address</label>
+																		    <div class="col-sm-9">
+																		      <input type="password" class="form-control" id="inputPassword3" placeholder="Lastname">
+																		    </div>
+																		  </div>
+																		  <div class="form-group">
+																		  	<div class="col-sm-8 col-sm-offset-2">
+																			  	<label class="checkbox-inline" data-toggle="tooltip" data-placement="left" title="Home">
+																				  <input type="checkbox" id="inlineCheckbox1" value="option1"> Home
+																				</label>
+																				<label class="checkbox-inline" data-toggle="tooltip" data-placement="left" title="Townhouse">
+																				  <input type="checkbox" id="inlineCheckbox2" value="option2"> Townhouse
+																				</label>
+																				<label class="checkbox-inline" data-toggle="tooltip" data-placement="left" title="Condominium">
+																				  <input type="checkbox" id="inlineCheckbox3" value="option3"> Condominium
+																				</label>
+																			</div>
+																		  </div>
+																		  <div class="form-group">
+																		  	<div class="col-sm-8 col-sm-offset-2">
+																		  		<label class="radio-inline">
+																				  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Male
+																				</label>
+																				<label class="radio-inline">
+																				  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Female
+																				</label>
+																		  	</div>
+																		  </div>
+																		</form>
+																	</div>
+																	<div class="modal-footer">
+																		<button type="button" class="btn btn-primary">
+																			Save
+																		</button>
+																		<button type="button" class="btn btn-danger" data-dismiss="modal">
+																			Close
+																		</button> 
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</p>
+							</div>
+							<div class="tab-pane" id="panel-available">
+								<p>
+									<div class="panel panel-primary">
+										<div class="panel-heading">
+											<h3 class="panel-title visible-xs">Available Class-xs</h3>
+											<h3 class="panel-title visible-sm">Available Class-sm</h3>
+											<h3 class="panel-title visible-md">Available Class-md</h3>
+											<h3 class="panel-title visible-lg">Available Class-lg</h3>
+										</div>
+										<div class="panel-body">
+											<div class="col-sm-12 text-center">
+												<img class="img-rounded hidden-xs" alt="Bootstrap Image Preview" src="mountains_sky_grass_trees_hdr_95305_1920x1080.jpg" height="320px" width="640px" />
+											</div>
+										</div>
+									</div>
+								</p>
+							</div>
+							<div class="tab-pane" id="panel-jquery">
+								<p>
+									<div class="panel panel-primary">
+										<div class="panel-heading">
+											<h3 class="panel-title">Lab jQuery</h3>
+										</div>
+										<div class="panel-body">
+										<p style='position:absolute; color: #d0d0d0;font-size: 60pt;-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);left:65%;top: 55%'>Lab jQuery</p>
+											<div class="col-md-12">
+												<br/>
+												<form class="form-horizontal" role="form">
+													<div class="form-group">
+														<div class="col-sm-1">
+															<label class="control-label">
+															<font color=#ff0000>V</font><font color=#da6924>a</font><font color=#b6c048>l</font><font color=#91f46d>u</font><font color=#6dfc91>e</font> <font color=#2489da>1</font>
+															</label>
+														</div>
+														<div class="col-sm-4">
+															<input class="form-control value" id="_text_value1" type="text" placeholder="Value 1" autocomplete="off" />
+														</div>
+														<div class="col-sm-2">
+															<button id="_btn_ok1" type="button" class="btn btn-default">
+																OK
+															</button>
+															<button id="_btn_change1" type="button" class="btn btn-default">
+																Change
+															</button>
+														</div>
+														<div class="col-sm-2">
+															<label class="control-label">
+															<font color=#ff0000>C</font><font color=#eb3a13>u</font><font color=#d77127>r</font><font color=#c4a23a>r</font><font color=#b0cb4e>e</font><font color=#9ce962>n</font><font color=#89fa75>t</font> <font color=#62f59c>V</font><font color=#4edfb0>a</font><font color=#3abcc4>l</font><font color=#2790d7>u</font><font color=#135ceb>e</font>
+															</label>
+														</div>
+														<div class="col-sm-2">
+															<input class="form-control" id="_text_currentvalue1" type="text" placeholder="Value 1" disabled="disabled" autocomplete="off"/>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-sm-1">
+															<label class="control-label text-primary">
+															Value 2
+															</label>
+														</div>
+														<div class="col-sm-4">
+															<input class="form-control value" id="_text_value2" type="text" placeholder="Value 2" autocomplete="off"/>
+														</div>
+														<div class="col-sm-2">
+															<button id="_btn_ok2" type="button" class="btn btn-primary">
+																OK
+															</button>
+															<button id="_btn_change2" type="button" class="btn btn-primary">
+																Change
+															</button>
+														</div>
+														<div class="col-sm-2">
+															<label class="control-label text-primary">
+															Current Value
+															</label>
+														</div>
+														<div class="col-sm-2">
+															<input class="form-control" id="_text_currentvalue2" type="text" placeholder="Value 2" disabled="disabled" autocomplete="off"/>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-sm-1">
+															<label class="control-label text-success">
+															Value 3
+															</label>
+														</div>
+														<div class="col-sm-4">
+															<input class="form-control value" id="_text_value3" type="text" placeholder="Value 3" autocomplete="off"/>
+														</div>
+														<div class="col-sm-2">
+															<button id="_btn_ok3" type="button" class="btn btn-success">
+																OK
+															</button>
+															<button id="_btn_change3" type="button" class="btn btn-success">
+																Change
+															</button>
+														</div>
+														<div class="col-sm-2">
+															<label for="_label_keypress" class="control-label text-success">
+															Current Value
+															</label>
+														</div>
+														<div class="col-sm-2">
+															<input class="form-control" id="_text_currentvalue3" type="text" placeholder="Value 3" disabled="disabled" autocomplete="off"/>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-sm-1">
+															<label for="_label_keypress" class="control-label text-warning">
+															Value 4
+															</label>
+														</div>
+														<div class="col-sm-4">
+															<input class="form-control value" id="_text_value4" type="text" placeholder="Value 4" autocomplete="off"/>
+														</div>
+														<div class="col-sm-2">
+															<button id="_btn_ok4" type="button" class="btn btn-warning">
+																OK
+															</button>
+															<button id="_btn_change4" type="button" class="btn btn-warning">
+																Change
+															</button>
+														</div>
+														<div class="col-sm-2">
+															<label for="_label_keypress" class="control-label text-warning">
+															Current Value
+															</label>
+														</div>
+														<div class="col-sm-2">
+															<input class="form-control" id="_text_currentvalue4" type="text" placeholder="Value 4" disabled="disabled" autocomplete="off"/>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-sm-1">
+															<label class="control-label text-danger">
+															Value 5
+															</label>
+														</div>
+														<div class="col-sm-4">
+															<input class="form-control value" id="_text_value5" type="text" placeholder="Value 5" autocomplete="off"/>
+														</div>
+														<div class="col-sm-2">
+															<button id="_btn_ok5" type="button" class="btn btn-danger">
+																OK
+															</button>
+															<button id="_btn_change5" type="button" class="btn btn-danger">
+																Change
+															</button>
+														</div>
+														<div class="col-sm-2">
+															<label for="_label_keypress" class="control-label text-danger">
+															Current Value
+															</label>
+														</div>
+														<div class="col-sm-2">
+															<input class="form-control" id="_text_currentvalue5" type="text" placeholder="Value 5" disabled="disabled" autocomplete="off"/>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-sm-4 col-sm-offset-1">
+															<input class="form-control" id="_text_plus" type="text" placeholder="Plus" disabled="disabled" autocomplete="off"/>
+														</div>
+														<div class="col-sm-1">
+															<button id="_btn_plus" type="button" class="btn btn-primary">
+																Plus
+															</button>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-sm-4 col-sm-offset-1">
+															<input class="form-control" id="_text_multiplied" type="text" placeholder="Multiplied" disabled="disabled" autocomplete="off"/>
+														</div>
+														<div class="col-sm-1">
+															<button id="_btn_multiplied" type="button" class="btn btn-primary">
+																Multiply 
+															</button>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-sm-1 col-sm-offset-1">
+															<button id="_btn_submit" type="button" class="btn btn-primary">
+																Submit 
+															</button>
+														</div>
+														<div class="col-sm-1">
+															<button id="_btn_reset" type="reset" class="btn btn-danger">
+																Reset
+															</button>
+														</div>
+														<div class="col-sm-3 col-sm-offset-2">
+															<button id="_btn_randomcolor" type="reset" class="btn btn-default">
+																Random Color
+															</button>
+															<button id="_btn_clear" type="reset" class="btn btn-danger">
+																Clear
+															</button>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-sm-2">
+															<label for="_label_historyplus" class="control-label">
+															History Plus:
+															</label>
+														</div>
+														<div class="col-sm-3">
+															<table class="table table-bordered table-condensed">
+																<tbody id="_tbody_plus">
+																</tbody>
+															</table>
+														</div>
+														<div class="col-sm-2">
+															<label for="_label_historymultiplied" class="control-label">
+															History Multiply:
+															</label>
+														</div>
+														<div class="col-sm-3">
+															<table class="table table-bordered table-condensed">
+																<tbody id="_tbody_multiplied">
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</p>
+							</div>
+							<div class="tab-pane" id="panel-calculator">
+								<p>
+									<div class="panel panel-primary">
+										<div class="panel-heading">
+											<h3 class="panel-title">Calculator</h3>
+										</div>
+										<div class="panel-body">
+											<div class="col-xs-12 col-xs-offset-3 text-center">
+												<br/>
+												<form id="form_calculator" class="form-horizontal" role="form">
+													<div class="form-group">
+														<div class="col-xs-6">
+															<input id="textshow" class="form-control text-right height_input" type="text" autocomplete="off" />
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-xs-6">
+															<button id="btn7" class="btn btn-default btn-lg number width_normalbutton" value="7" type="button">7</button>
+															<button id="btn8" class="btn btn-default btn-lg number width_normalbutton" value="8" type="button">8</button>
+															<button id="btn9" class="btn btn-default btn-lg number width_normalbutton" value="9" type="button">9</button>
+															<button id="btnbracket1" class="btn btn-default btn-lg operator width_markbutton" value="(" type="button">(</button>
+															<button id="btndevide" class="btn btn-default btn-lg operator width_markbutton" value="/" type="button">/</button>
+															<button id="btnclear" class="btn btn-default btn-lg width_deletebutton" type="button">Clear</button>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-xs-6">
+															<button id="btn4" class="btn btn-default btn-lg number width_normalbutton" value="4" type="button">4</button>
+															<button id="btn5" class="btn btn-default btn-lg number width_normalbutton" value="5" type="button">5</button>
+															<button id="btn6" class="btn btn-default btn-lg number width_normalbutton" value="6" type="button">6</button>
+															<button id="btnbracket2" class="btn btn-default btn-lg operator width_markbutton" value=")" type="button">)</button>
+															<button id="btnmultiply" class="btn btn-default btn-lg operator width_markbutton" value="*" type="button">x</button>
+															<button id="btnback" class="btn btn-default btn-lg width_deletebutton" type="button">Back</button>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-xs-6">
+															<button id="btn1" class="btn btn-default btn-lg number width_normalbutton" value="1" type="button">1</button>
+															<button id="btn2" class="btn btn-default btn-lg number width_normalbutton" value="2" type="button">2</button>
+															<button id="btn3" class="btn btn-default btn-lg number width_normalbutton" value="3" type="button">3</button>
+															<button id="btnmod" class="btn btn-default btn-lg width_deletebutton" value="%" type="button">Mod</button>
+															<button id="btnminus" class="btn btn-default btn-lg operator width_markbutton" value="-" type="button">-</button>
+															<button id="btnspecial1" class="btn btn-default btn-lg width_deletebutton" type="button">Color</button>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-xs-6">
+															<button id="btn0" class="btn btn-default btn-lg number width_normalbutton0" value="0" type="button">0</button>
+															<button id="btndot" class="btn btn-default btn-lg operator width_markbutton" value="." type="button">.</button>
+															<button id="btnminus" class="btn btn-default btn-lg operator width_markbutton" value="+" type="button">+</button>
+															<button id="btnresult" class="btn btn-default btn-lg width_markbutton" type="button">=</button>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="_modal_nospace" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="gridSystemModalLabel"><strong>Warning</strong></h4>
+		      </div>
+		      <div class="modal-body">
+		        <div class="row">
+		          <div class="col-md-12 text-center">
+		          	<strong style="font-size: 17px">No Space</strong>
+		          </div>
+		        </div>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+		<div id="_modal_plus" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="gridSystemModalLabel"><strong>Warning</strong></h4>
+		      </div>
+		      <div class="modal-body">
+		        <div class="row">
+		          <div class="col-md-12 text-center">
+		          	<strong style="font-size: 17px">Plus is blank.</strong>
+		          </div>
+		        </div>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+		<div id="_modal_multiply" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="gridSystemModalLabel"><strong>Warning</strong></h4>
+		      </div>
+		      <div class="modal-body">
+		        <div class="row">
+		          <div class="col-md-12 text-center">
+		          	<strong style="font-size: 17px">Multiply is blank.</strong>
+		          </div>
+		        </div>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+		<div id="_modal_isnumeric" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="gridSystemModalLabel"><strong>Warning</strong></h4>
+		      </div>
+		      <div class="modal-body">
+		        <div class="row">
+		          <div class="col-md-12 text-center">
+		          	<strong style="font-size: 17px">Isn't Numeric.</strong>
+		          </div>
+		        </div>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+	</body>
+	<script src="jquery-1.11.3.min.js"></script>
+ 	<script src="bootstrap.min.js"></script>
+ 	<script type="text/javascript">
+
+ 		var $formCalculator = $('#form_calculator');
+ 		var $textShow = $('#textshow');
+ 		var $number = $('.number');
+		var $btnClear = $('#btnclear');
+		var $operator = $('.operator');
+		var $btnMod = $('#btnmod');
+		var $btnback = $('#btnback');
+		var $btnSpecial1 = $('#btnspecial1');
+		var $btnResult = $('#btnresult');
+
+ 		var $btn0 = $('#btn0');
+ 		var $btn1 = $('#btn1');
+ 		var $btn2 = $('#btn2');
+ 		var $btn3 = $('#btn3');
+ 		var $btn4 = $('#btn4');
+ 		var $btn5 = $('#btn5');
+ 		var $btn6 = $('#btn6');
+ 		var $btn7 = $('#btn7');
+ 		var $btn8 = $('#btn8');
+ 		var $btn9 = $('#btn9');
+ 		// $(document).ready(function(){
+
+		    $("#_btn_ok1").click(function(){
+		    	if($("#_text_value1").val().indexOf(" ") >= 0){
+		    		$("#_modal_nospace").modal("show");
+		    		$("#_text_value1").val("");
+		    	}else{
+		    		if($("#_text_value1").val() == ""){
+		    			$("#_text_value1").val(0);
+		    			$("#_text_value1").attr("disabled", "disabled");
+			    		$("#_text_currentvalue1").val(parseFloat($("#_text_value1").val()));
+			    		$("#_text_value1").css("background-color", "#D0D0D0");
+		    		}else if($.isNumeric($("#_text_value1").val()) == false){
+		    			$('#_modal_isnumeric').modal('show');
+		    			$("#_text_value1").val("");
+		    		}else{
+		    			$("#_text_value1").attr("disabled", "disabled");
+			    		$("#_text_currentvalue1").val(parseFloat($("#_text_value1").val()));
+			    		$("#_text_value1").css("background-color", "#D0D0D0");
+		    		}
+		    	}
+		    });
+
+		    $("#_btn_change1").click(function(){
+		    	$("#_text_value1").removeAttr("disabled");
+		    	$("#_text_value1").css("background-color", "white");
+		    });
+
+		    $("#_btn_ok2").click(function(){
+		    	if($("#_text_value2").val().indexOf(" ") >= 0){
+		    		$("#_modal_nospace").modal("show");
+		    		$("#_text_value2").val("");
+		    	}else{
+		    		if($("#_text_value2").val() == ""){
+		    			$("#_text_value2").val(0);
+		    			$("#_text_value2").attr("disabled", "disabled");
+			    		$("#_text_currentvalue2").val(parseFloat($("#_text_value2").val()));
+			    		$("#_text_value2").css("background-color", "#D0D0D0");
+		    		}else if($.isNumeric($("#_text_value2").val()) == false){
+		    			$('#_modal_isnumeric').modal('show');
+		    			$("#_text_value2").val("");
+		    		}else{
+		    			$("#_text_value2").attr("disabled", "disabled");
+			    		$("#_text_currentvalue2").val(parseFloat($("#_text_value2").val()));
+			    		$("#_text_value2").css("background-color", "#D0D0D0");
+		    		}
+		    	}
+		    });
+
+		    $("#_btn_change2").click(function(){
+		    	$("#_text_value2").removeAttr("disabled");
+		    	$("#_text_value2").css("background-color", "white");
+		    });
+
+		    $("#_btn_ok3").click(function(){
+		    	if($("#_text_value3").val().indexOf(" ") >= 0){
+		    		$("#_modal_nospace").modal("show");
+		    		$("#_text_value3").val("");
+		    	}else{
+		    		if($("#_text_value3").val() == ""){
+		    			$("#_text_value3").val(0);
+		    			$("#_text_value3").attr("disabled", "disabled");
+			    		$("#_text_currentvalue3").val(parseFloat($("#_text_value3").val()));
+			    		$("#_text_value3").css("background-color", "#D0D0D0");
+		    		}else if($.isNumeric($("#_text_value3").val()) == false){
+		    			$('#_modal_isnumeric').modal('show');
+		    			$("#_text_value3").val("");
+		    		}else{
+		    			$("#_text_value3").attr("disabled", "disabled");
+			    		$("#_text_currentvalue3").val(parseFloat($("#_text_value3").val()));
+			    		$("#_text_value3").css("background-color", "#D0D0D0");
+		    		}
+		    	}
+		    });
+
+		    $("#_btn_change3").click(function(){
+		    	$("#_text_value3").removeAttr("disabled");
+		    	$("#_text_value3").css("background-color", "white");
+		    });
+
+		    $("#_btn_ok4").click(function(){
+		    	if($("#_text_value4").val().indexOf(" ") >= 0){
+		    		$("#_modal_nospace").modal("show");
+		    		$("#_text_value4").val("");
+		    	}else{
+		    		if($("#_text_value4").val() == ""){
+		    			$("#_text_value4").val(0);
+		    			$("#_text_value4").attr("disabled", "disabled");
+			    		$("#_text_currentvalue4").val(parseFloat($("#_text_value4").val()));
+			    		$("#_text_value4").css("background-color", "#D0D0D0");
+		    		}else if($.isNumeric($("#_text_value4").val()) == false){
+		    			$('#_modal_isnumeric').modal('show');
+		    			$("#_text_value4").val("");
+		    		}else{
+		    			$("#_text_value4").attr("disabled", "disabled");
+			    		$("#_text_currentvalue4").val(parseFloat($("#_text_value4").val()));
+			    		$("#_text_value4").css("background-color", "#D0D0D0");
+		    		}
+		    	}
+		    });
+
+		    $("#_btn_change4").click(function(){
+		    	$("#_text_value4").removeAttr("disabled");
+		    	$("#_text_value4").css("background-color", "white");
+		    });
+
+		    $("#_btn_ok5").click(function(){
+		    	if($("#_text_value5").val().indexOf(" ") >= 0){
+		    		$("#_modal_nospace").modal("show");
+		    		$("#_text_value5").val("");
+		    	}else{
+		    		if($("#_text_value5").val() == ""){
+		    			$("#_text_value5").val(0);
+		    			$("#_text_value5").attr("disabled", "disabled");
+		    			$("#_text_currentvalue5").val(parseFloat($("#_text_value5").val()));
+		    			$("#_text_value5").css("background-color", "#D0D0D0");
+		    		}else if($.isNumeric($("#_text_value5").val()) == false){
+		    			$('#_modal_isnumeric').modal('show');
+		    			$("#_text_value5").val("");
+		    		}else{
+						$("#_text_value5").attr("disabled", "disabled");
+		    			$("#_text_currentvalue5").val(parseFloat($("#_text_value5").val()));
+		    			$("#_text_value5").css("background-color", "#D0D0D0");
+		    		}
+		    	}
+		    });
+
+		    $("#_btn_change5").click(function(){
+		    	$("#_text_value5").removeAttr("disabled");
+		    	$("#_text_value5").css("background-color", "white");
+		    });
+
+		    $("#_btn_reset").click(function(){
+		    	// $("#_text_value1").val("");
+		    	// $("#_text_value2").val("");
+		    	// $("#_text_value3").val("");
+		    	// $("#_text_value4").val("");
+		    	// $("#_text_value5").val("");
+		    	// $("#_text_currentvalue1").val("");
+		    	// $("#_text_currentvalue2").val("");
+		    	// $("#_text_currentvalue3").val("");
+		    	// $("#_text_currentvalue4").val("");
+		    	// $("#_text_currentvalue5").val("");
+		    	$("#_text_value1").removeAttr("disabled");
+		    	$("#_text_value2").removeAttr("disabled");
+		    	$("#_text_value3").removeAttr("disabled");
+		    	$("#_text_value4").removeAttr("disabled");
+		    	$("#_text_value5").removeAttr("disabled");
+		    	$("#_text_value1").css("background-color", "white");
+		    	$("#_text_value2").css("background-color", "white");
+		    	$("#_text_value3").css("background-color", "white");
+		    	$("#_text_value4").css("background-color", "white");
+		    	$("#_text_value5").css("background-color", "white");
+		    	$("#_text_plus").val("");
+		    	$("#_text_multiplied").val("");
+		    });
+
+		    $("#_btn_plus").click(function(){
+				var current1 = $("#_text_currentvalue1").val() == "" ? 0 : $("#_text_currentvalue1").val();
+		    	var current2 = $("#_text_currentvalue2").val() == "" ? 0 : $("#_text_currentvalue2").val();
+		    	var current3 = $("#_text_currentvalue3").val() == "" ? 0 : $("#_text_currentvalue3").val();
+		    	var current4 = $("#_text_currentvalue4").val() == "" ? 0 : $("#_text_currentvalue4").val();
+		    	var current5 = $("#_text_currentvalue5").val() == "" ? 0 : $("#_text_currentvalue5").val();
+		    	var sum = parseFloat(current1)+parseFloat(current2)+parseFloat(current3)+parseFloat(current4)+parseFloat(current5);
+		    	$("#_text_plus").val(sum);
+		    });
+
+		    $("#_btn_multiplied").click(function(){
+		    	var current1 = $("#_text_currentvalue1").val() == "" ? 1 : $("#_text_currentvalue1").val();
+		    	var current2 = $("#_text_currentvalue2").val() == "" ? 1 : $("#_text_currentvalue2").val();
+		    	var current3 = $("#_text_currentvalue3").val() == "" ? 1 : $("#_text_currentvalue3").val();
+		    	var current4 = $("#_text_currentvalue4").val() == "" ? 1 : $("#_text_currentvalue4").val();
+		    	var current5 = $("#_text_currentvalue5").val() == "" ? 1 : $("#_text_currentvalue5").val();
+		    	var multiplied = parseFloat(current1)*parseFloat(current2)*parseFloat(current3)*parseFloat(current4)*parseFloat(current5);
+
+		    	$("#_text_multiplied").val(multiplied);
+		    });
+
+		    $("#_btn_submit").click(function(){
+		    	if($("#_text_plus").val() != "" && $("#_text_multiplied").val() != ""){
+		    		$("#_tbody_plus").append('<tr class="info"><td>'+$("#_text_plus").val()+'</td></tr>');
+		    		$("#_tbody_multiplied").append('<tr class="info"><td>'+$("#_text_multiplied").val()+'</td></tr>');
+		    	}else if($("#_text_plus").val().trim() == ""){
+		    		$("#_modal_plus").modal("show");
+		    	}else if($("#_text_multiplied").val().trim() == ""){
+		    		$("#_modal_multiply").modal("show");
+		    	}
+		    });
+
+
+		    $("#_text_value1").mouseenter(function(){
+		    	if(!$('#_text_value1').attr('disabled')){
+		    		// $("#_text_value1").css("background-color", "#FFCCCC");
+		    		$("#_text_value1").addClass('rainbow');
+		    	}
+		    });
+
+		    $("#_text_value1").mouseleave(function(){
+		    	if(!$('#_text_value1').attr('disabled')){
+		    		$("#_text_value1").removeClass('rainbow');
+		    		// $("#_text_value1").css("background-color", "white");
+		    	}
+		    });
+
+
+		    $("#_text_value2").mouseenter(function(){
+		    	if(!$('#_text_value2').attr('disabled')){
+		    		$("#_text_value2").css("background-color", "#00CCFF");
+		    	}
+		    });
+
+		    $("#_text_value2").mouseleave(function(){
+		    	if(!$('#_text_value2').attr('disabled')){
+		    		$("#_text_value2").css("background-color", "white");
+		    	}
+		    });
+
+ 			$("#_text_value3").mouseenter(function(){
+ 				if(!$('#_text_value3').attr('disabled')){
+		    		$("#_text_value3").css("background-color", "#66FF66");
+		    	}
+		    });
+
+		    $("#_text_value3").mouseleave(function(){
+		    	if(!$('#_text_value3').attr('disabled')){
+		    		$("#_text_value3").css("background-color", "white");
+		    	}
+		    });
+
+		    $("#_text_value4").mouseenter(function(){
+		    	if(!$('#_text_value4').attr('disabled')){
+		    		$("#_text_value4").css("background-color", "#FFFF66");
+		    	}
+		    });
+
+		    $("#_text_value4").mouseleave(function(){
+		    	if(!$('#_text_value4').attr('disabled')){
+		    		$("#_text_value4").css("background-color", "white");
+		    	}
+		    });
+
+		    $("#_text_value5").mouseenter(function(){
+		    	if(!$('#_text_value5').attr('disabled')){
+		    		$("#_text_value5").css("background-color", "#FF3333");
+		    	}
+		    });
+
+		    $("#_text_value5").mouseleave(function(){
+		    	if(!$('#_text_value5').attr('disabled')){
+		    		$("#_text_value5").css("background-color", "white");
+		    	}
+		    });
+
+		    /*$("#_text_value1").keypress(function (e){
+	            if( e.which!=8 && e.which!=0 && (e.which<48 || e.which>57)){
+	                return false;
+	            }
+        	});
+        	$("#_text_value2").keypress(function (e){
+	            if( e.which!=8 && e.which!=0 && (e.which<48 || e.which>57)){
+	                return false;
+	            }
+        	});
+        	$("#_text_value3").keypress(function (e){
+	            if( e.which!=8 && e.which!=0 && (e.which<48 || e.which>57)){
+	                return false;
+	            }
+        	});
+        	$("#_text_value4").keypress(function (e){
+	            if( e.which!=8 && e.which!=0 && (e.which<48 || e.which>57)){
+	                return false;
+	            }
+        	});
+        	$("#_text_value5").keypress(function (e){
+	            if( e.which!=8 && e.which!=0 && (e.which<48 || e.which>57)){
+	                return false;
+	            }
+        	});*/
+		// });
+
+		$btnClear.click(function(){
+			$textShow.val("");
+			result = "";
+		});
+
+		$number.click(function(){
+			var value = $(this).val();
+			var totalText = $textShow.val() + value;
+			$textShow.val(totalText);
+		});
+
+		$operator.click(function(){
+			var operator = $(this).val();
+			if(operator == '/'){
+				operator = '/';
+			}else if(operator == '*'){
+				operator = 'x';
+			}
+			var totalText = $textShow.val() + operator;
+			$textShow.val(totalText);
+		});
+
+		$btnMod.click(function(){
+			var value = $(this).val();
+			var totalText = $textShow.val() + value;
+			$textShow.val(totalText);
+		});
+
+		$btnback.click(function(){
+			var totalText = $textShow.val();
+			totalText = totalText.substring(0,totalText.length - 1);
+			$textShow.val(totalText);
+		});
+
+		$btnResult.click(function(){
+			var textshow = $textShow.val();
+
+			try{
+				if($textShow.val().indexOf('x') != -1){
+					textshow = textshow.replace( new RegExp('x', "gi"), '*');
+				}
+				if($textShow.val().indexOf('/') != -1){
+					textshow = textshow.replace( new RegExp('/', "gi"), '/');
+				}
+
+				$textShow.val(eval(textshow));
+			}catch(err){
+				$('#_modal_error').modal('show');
+			}
+		});
+
+		$btnSpecial1.click(function(){
+			var inputLength = $formCalculator.find('input').length;
+			var buttonLength = $formCalculator.find('button').length;
+			for(var i = 0; i < inputLength; i++){
+				var color = get_random_color();
+				$formCalculator.find('input:eq("'+i+'")').css('background', color);
+			}
+			for(var i = 0; i < buttonLength; i++){
+				var color = get_random_color();
+				$formCalculator.find('button:eq("'+i+'")').css('background', color);
+			}
+			$btnSpecial1.css('background', 'white');
+		});
+// 22
+		
+		$('#_btn_randomcolor').click(function(){
+			$('#panel-jquery').find('.panel-body').css('background-color', get_random_color());
+		});
+
+		$('#_btn_clear').click(function(){
+			$('#panel-jquery').find('.panel-body').css('background-color', '');
+		});
+
+		function get_random_color() {
+		    var letters = '0123456789ABCDEF'.split('');
+		    var color = '#';
+		    for (var i = 0; i < 6; i++ ) {
+		        color += letters[Math.round(Math.random() * 15)];
+		    }
+		    return color;
+		}
+ 	</script>
+</html>

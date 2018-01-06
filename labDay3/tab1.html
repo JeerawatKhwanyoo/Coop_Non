@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+   
+
+		<style>
+
+
+
+
+
+
+
+			h4{
+				text-align: right;
+				font-size: 14px;
+
+
+				
+
+			}
+			h3{
+				text-align: left;
+				font-size: 17px;
+
+
+			}
+
+			
+		</style>
+
+		
+</head>
+
+
+
+
+
+
+<body>
+				<!-- ROW1 -->
+			<div class="container-fuait">
+
+				<div class="row">
+
+						&nbsp&nbsp&nbsp&nbsp&nbsp<button type="button" class="btn btn-info btn-md" id="myBtn2">Recorde information</button>
+ 
+
+
+						  <!-- Modal -->
+						  <div class="modal fade" id="myModal2" role="dialog">
+						  	<div class="col-sm-offset-3 col-sm-9">
+						    <div class="modal-dialog-lg">
+						    
+						      <!-- Modal content-->
+						    <div class="col-sm-12" style="width: 800px;">
+						      <div class="modal-content">
+
+
+
+
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal">×</button>
+						          
+						        </div>
+
+
+
+						        <p>
+						        <div class="row">
+									    					<div class="col-sm-12">
+										    					<div class="form-group">
+										    						<!-- row-col-sm-6 box1-->
+										    						<div class="col-sm-6">
+										    							<div class="col-sm-4">
+										    								<div class="form-group">
+										    									<h4></h4>
+										    								</div>
+										    						
+										    							</div>
+
+													    				<div class="col-sm-6">
+													    					<div class="form-group">
+													    					<input type="doc_no" class="form-control" id="doc_no" placeholder="DOC NO" >
+													    						</div>
+
+													    				</div>
+
+											    					</div>	
+											    					
+											    				
+											    				
+
+
+										    					</div>
+										    				</div>	
+									    				</div>
+									    				</p>
+									    			<!-- row2 -->
+									    				<br>
+									    				<div class="row">
+									    					<div class="col-sm-12">
+										    					<div class="form-group">
+										    						<!-- row-col-sm-6 box1-->
+										    						<div class="col-sm-6">
+										    						
+										    							<div class="col-sm-4">
+										    								<div class="form-group">
+										    									<h4>สร้างโดย</h4>
+										    								</div>
+										    						
+										    							</div>
+
+
+													    				<div class="col-sm-6">
+													    					<div class="form-group">
+													    					<input type="CRE_BY" class="form-control" id="CRE_BY" placeholder="CRE_BY" >
+													    						</div>
+
+													    				</div>
+
+											    					</div>	
+											    					<!-- row-col-sm-6 box2-->
+											    					<div class="row">
+											    					<div class="col-sm-6">
+											    						<div class="col-sm-4">
+										    								<div class="form-group"></div>
+										    									<h4>วันที่สร้าง</h4>
+										    								
+										    						
+										    							</div>
+
+
+													    				<div class="col-sm-5">
+													    					<div class="form-group">
+													    					<input type="CRE_DATE" class="form-control" id="CRE_DATE" placeholder="CRE_DATE" >
+													    						</div>
+
+													    				</div>
+
+											    					</div>
+											    					</div>
+
+
+										    					</div>
+										    				</div>	
+									    				</div>
+
+									    			<!-- row3 -->
+									    				<div class="row">
+									    					<div class="col-sm-12">
+										    					<div class="form-group">
+										    						<!-- row-col-sm-6 box1-->
+										    						<div class="col-sm-6">
+										    						
+										    							<div class="col-sm-4">
+										    								<div class="form-group">
+										    									<h4>ปรับปรุงโดย</h4>
+										    								</div>
+										    						
+										    							</div>
+
+
+													    				<div class="col-sm-6">
+													    					<div class="form-group">
+													    					<input type="CPD_BY" class="form-control" id="CPD_BY" placeholder="CPD_BY" >
+													    						</div>
+
+													    				</div>
+
+											    					</div>	
+											    					<!-- row-col-sm-6 box2-->
+											    					<div class="row">
+											    					<div class="col-sm-6">
+											    						<div class="col-sm-4">
+										    								<div class="form-group"></div>
+										    									<h4>วันที่ปรับปรุง</h4>
+										    								
+										    						
+										    							</div>
+
+
+
+
+
+													    				<div class="col-sm-5">
+													    					<div class="form-group">
+													    					<input type="UPD_DATE" class="form-control" id="UPD_DATE" placeholder="UPD_DATE" >
+													    						</div>
+
+													    				</div>
+
+											    					</div>
+											    					</div>
+
+
+										    					</div>
+										    				</div>	
+									    				</div>
+
+						        <div class="modal-body">
+						          
+						          
+						        </div>
+						        
+
+
+						        <div class="modal-footer">
+						        <button type="button" class="btn btn-default">บันทึก</button>
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+						        </div>
+						      </div>
+						     </div>
+						      
+						    </div>
+						    </div>
+						  </div>
+
+						  			
+										</div>
+
+
+					<!--TOP-->					
+					<div class="well" >	
+						
+					
+							<!-- row1 -->
+						<div class="row">
+							<div class="col-sm-12">
+
+								<div class="col-sm-2">
+								<h4>สาขา</h4>
+								</div>
+
+								<div class="col-sm-8">
+									<input type="NB_STORE_NAME" class="form-control" id="NB_STORE_NAME" placeholder="NB_STORE_NAME" >
+								</div>
+
+
+							</div>
+						</div>	
+							<!-- row2 -->
+						<div class="row">
+							<div class="col-sm-12">
+
+								<div class="col-sm-2">
+								<h4>เอกสารบันทึกยอดขาย</h4>
+								</div>
+
+								
+
+								<div class="col-sm-2">
+									<input type="DAILY_SALES_DOC" class="form-control" id="DAILY_SALES_DOC" 
+									placeholder="DAILY_SALES_DOC" >
+								</div>
+
+								<div class="col-sm-2">
+								<h4>วันที่ขาย</h4>
+								</div>
+
+								<div class="col-sm-1">
+								<input type="SELL_DATE" class="form-control" id="SELL_DATE" placeholder="SELL_DATE" >
+								</div>
+
+
+								<div class="col-sm-2">
+								<h4>วันที่บันทึก</h4>
+								</div>
+
+								<div class="col-sm-1">
+								<input type="INPUT_DATE" class="form-control" id="INPUT_DATE" placeholder="INPUT_DATE" >
+								</div>
+
+
+
+							</div>
+						</div>	
+
+							<!-- row3 -->
+
+						<div class="row">
+							<div class="col-sm-12">
+
+								<div class="col-sm-2">
+								<h4>ลูกค้า</h4>
+								</div>
+
+
+								<div class="col-sm-8">
+									<input type="CUSTOMER_CODE" class="form-control" id="CUSTOMER_CODE" 
+									placeholder="CUSTOMER_CODE" >
+								</div>
+
+							</div>
+
+							
+							
+						</div>
+
+							<!-- row4 -->
+
+
+
+						<div class="row">
+							<div class="col-sm-12">
+
+								<div class="col-sm-2">
+								<h4>เลขที่สัญญา</h4>
+								</div>
+
+
+								<div class="col-sm-2">
+									<input type="COUNT_CODE" class="form-control" id="COUNT_CODE" 
+									placeholder="COUNT_CODE" >
+								</div>
+
+								<div class="col-sm-2">
+									<div class="checkbox">
+								      <h4><input type="checkbox" value="">หยุดขายโดยไม่แจ้ง</h4>
+								    </div>
+								</div>
+
+								<div class="col-sm-2">
+									<div class="checkbox">
+								      <h4><input type="checkbox" value="">ขายของหมดก่อนเวลา</h4>
+								    </div>
+								</div>
+
+								<div class="col-sm-2">
+									<div class="pull-right">
+										<button type="button" class="btn btn-default" >Copy!</button >
+									</div>
+									
+								</div>
+
+
+								<!-- row5 -->
+								<div class="row">
+									<div class="col-sm-12">
+
+								<div class="col-sm-2">
+								<h4>เปิด Inv./Rec.</h4>
+								</div>
+
+								
+
+								<div class="col-sm-2">
+									<input type="NB_DISP_STATUS" class="form-control" id="NB_DISP_STATUS" 
+									placeholder="NB_DISP_STATUS" >
+								</div>
+
+								<div class="col-sm-2">
+								<h4>โอนไป Income Sharing</h4>
+								</div>
+
+								<div class="col-sm-1">
+								<input type="ISP_POST" class="form-control" id="ISP_POST" placeholder="ISP_POST" >
+								</div>
+
+
+								<div class="col-sm-2">
+								<h4>ประเภทGP</h4>
+								</div>
+
+								<div class="col-sm-1">
+								<input type="GP_TYPE_NAME" class="form-control" id="GP_TYPE_NAME" 
+								placeholder="GP_TYPE_NAME" >
+								</div>
+
+
+
+							</div>
+						</div>	
+
+
+
+
+
+
+							</div>
+
+							
+							
+						</div>
+
+
+
+
+
+
+
+
+
+				<!-- Below -->
+
+					
+
+
+							<div class="row">
+						<div class="col-sm-12">
+							<div class="table-responsive " > 
+								<div class="col-sm-offset-1 col-sm-5" >
+									  <table >
+									  		<thead style="background-color: #005580; text-align: center; ">
+										      <tr>									       	
+										        <th colspan="2" style="text-align: center; width: 700px;"><font color="#ffffff">เลขที่ใบเสร็จ</font></th>
+										      
+										      
+										       
+										       	
+										       	
+										      </tr>
+										   </thead>
+
+										   <tbody style="width: 120px;">
+										   		<tr>
+											      
+											         		<td><input type="text" class="form-control"/>	
+															</td>
+															<td><input type="text" class="form-control" id="CD_DATE" 
+															placeholder="CD_DATE" ></td>
+															
+														
+											       
+											    </tr>
+
+											    	<tr>
+											      
+											         		<td><input type="CD_NO" class="form-control" id="CD_NO" 
+															placeholder="CD_NO" /></td>
+															<td><input type="text" class="form-control" id="CD_DATE" 
+															placeholder="CD_DATE" ></td>
+															
+														
+											       
+											    </tr>
+
+											    	<tr>
+											      
+											         		<td><input type="CD_NO" class="form-control" id="CD_NO" 
+															placeholder="CD_NO" /></td>
+															<td><input type="text" class="form-control" id="CD_DATE" 
+															placeholder="CD_DATE" ></td>
+															
+														
+											       
+											    </tr>
+
+											    	<tr>
+											      
+											         		<td><input type="CD_NO" class="form-control" id="CD_NO" 
+															placeholder="CD_NO" /></td>
+															<td><input type="text" class="form-control" id="CD_DATE" 
+															placeholder="CD_DATE" ></td>
+															
+														
+											       
+											    </tr>
+
+											    	<tr>
+											      
+											         		<td><input type="CD_NO" class="form-control" id="CD_NO" 
+															placeholder="CD_NO" /></td>
+															<td><input type="text" class="form-control" id="CD_DATE" 
+															placeholder="CD_DATE" ></td>
+														
+														
+											       
+											    </tr>
+
+											    	<tr>
+											      
+											         		<td><input type="CD_NO" class="form-control" id="CD_NO" 
+															placeholder="CD_NO" /></td>
+															<td><input type="text" class="form-control" id="CD_DATE" 
+															placeholder="CD_DATE" ></td>
+															
+														
+											       
+											    </tr>
+
+											    	<tr>
+											      
+											         		<td><input type="CD_NO" class="form-control" id="CD_NO" 
+															placeholder="CD_NO" /></td>
+															<td><input type="text" class="form-control" id="CD_DATE" 
+															placeholder="CD_DATE" ></td>
+															
+														
+											       
+											    </tr>
+
+											    	<tr>
+											      
+											         		<td><input type="CD_NO" class="form-control" id="CD_NO" 
+															placeholder="CD_NO" /></td>
+															<td><input type="text" class="form-control" id="CD_DATE" 
+															placeholder="CD_DATE" ></td>
+															
+														
+											       
+											    </tr>
+
+											    	<tr>
+											      
+											         		<td><input type="CD_NO" class="form-control" id="CD_NO" 
+															placeholder="CD_NO" /></td>
+															<td><input type="text" class="form-control" id="CD_DATE" 
+															placeholder="CD_DATE" ></td>
+															
+														
+											       
+											    </tr>
+
+											   
+
+										   </table>
+
+										
+
+
+
+
+									</div>
+
+									<div class="col-sm-4">
+									  <table >
+									  		<thead style="background-color: #005580; text-align: center  ">
+										      <tr>									       	
+										        <th style="text-align: center; width: 500px;"><font color="#ffffff">เลขที่ใบเสร็จ/font></th>
+										        <th style="text-align: center; width: 500px;"><font color="#ffffff">วันที่ใบเสร็จ</font></th>
+										      
+										       
+										       	
+										       	
+										      </tr>
+										   </thead>
+
+										   <tbody>
+										   		<tr>
+											      
+											         		<td><input type="CD_NO" class="form-control" id="CD_NO" 
+															placeholder="CD_NO" /></td>
+															<td><input type="text" class="form-control" id="CD_DATE" 
+															placeholder="CD_DATE" ></td>
+															
+														
+											       
+											    </tr>
+
+											    	<tr>
+											      
+											         		<td>
+											         		<input type="CD_NO" class="form-control" id="CD_NO" 
+															placeholder="CD_NO" />
+															</td>
+															<td><input type="text" class="form-control" id="CD_DATE" 
+															placeholder="CD_DATE" ></td>
+															
+														
+											       
+											    </tr>
+
+											    	<tr>
+											      
+											         		<td><input type="CD_NO" class="form-control" id="CD_NO" 
+															placeholder="CD_NO" /></td>
+															<td><input type="text" class="form-control" id="CD_DATE" 
+															placeholder="CD_DATE" ></td>
+															
+														
+											       
+											    </tr>
+
+											    	<tr>
+											      
+											         		<td><input type="CD_NO" class="form-control" id="CD_NO" 
+															placeholder="CD_NO" /></td>
+															<td><input type="text" class="form-control" id="CD_DATE" 
+															placeholder="CD_DATE" ></td>
+															
+														
+											       
+											    </tr>
+
+											    	<tr>
+											      
+											         		<td><input type="CD_NO" class="form-control" id="CD_NO" 
+															placeholder="CD_NO" /></td>
+															<td><input type="text" class="form-control" id="CD_DATE" 
+															placeholder="CD_DATE" ></td>
+														
+														
+											       
+											    </tr>
+
+											    	<tr>
+											      
+											         		<td><input type="CD_NO" class="form-control" id="CD_NO" 
+															placeholder="CD_NO" /></td>
+															<td><input type="text" class="form-control" id="CD_DATE" 
+															placeholder="CD_DATE" ></td>
+															
+														
+											       
+											    </tr>
+
+											    	<tr>
+											      
+											         		<td><input type="CD_NO" class="form-control" id="CD_NO" 
+															placeholder="CD_NO" /></td>
+															<td><input type="text" class="form-control" id="CD_DATE" 
+															placeholder="CD_DATE" ></td>
+															
+														
+											       
+											    </tr>
+
+											    	<tr>
+											      
+											         		<td><input type="CD_NO" class="form-control" id="CD_NO" 
+															placeholder="CD_NO" /></td>
+															<td><input type="text" class="form-control" id="CD_DATE" 
+															placeholder="CD_DATE" ></td>
+															
+														
+											       
+											    </tr>
+
+											    	<tr>
+											      
+											         		<td><input type="CD_NO" class="form-control" id="CD_NO" 
+															placeholder="CD_NO" /></td>
+															<td><input type="text" class="form-control" id="CD_DATE" 
+															placeholder="CD_DATE" ></td>
+															
+														
+											       
+											    	</tr>
+
+											    	  	<tr>
+											      
+											         		<td><h4>รวมยอด&nbsp&nbsp&nbsp&nbsp</h4></td>
+															<td><input type="text" class="form-control" id="CD_DATE" 
+															placeholder="CD_DATE" ></td>
+															
+														
+											       
+											    	</tr>
+
+											   
+
+										   </table>
+
+										   	<div class="col-sm-offset-1">
+
+
+										   	</div>
+
+
+
+
+									</div>
+					
+					
+		 						</div>
+
+							<!-- button -->
+
+
+							<div class="row">
+									<div class="col-sm-12">
+										
+											<div class="col-sm-offset-1 col-sm-6">
+
+											<button type="button" class="btn btn-default" >Previous</button>
+											&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+											<button type="button" class="btn btn-default" >Next</button>
+											&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+											<button type="button" class="btn btn-default" >Save</button>
+											&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+											<button type="button" class="btn btn-default" >Delete</button>
+											&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+											<button type="button" class="btn btn-default" >Cancel</button>
+											&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+											<button type="button" class="btn btn-default" >Exit</button>
+
+
+											<p>
+											<a href="tab1.html">pag1<a>
+											<a href="tab2.html">pag2</a>
+											</p>
+											</div>		
+
+
+
+
+
+									<!-- 		<div class="col-sm-1">
+											<div class="pull-left">
+											<button type="button" class="btn btn-default" >Next</button >
+											</div>
+											</div>
+
+											<div class="col-sm-1">
+											<div class="pull-left">
+											<button type="button" class="btn btn-default" >Save</button >
+											</div>
+											</div>
+
+											<div class="col-sm-1">
+											<div class="pull-left">
+											<button type="button" class="btn btn-default" >Delete</button >
+											</div>
+											</div>
+
+											<div class="col-sm-1">
+											<div class="pull-left">
+											<button type="button" class="btn btn-default" >Cancel</button >
+											</div>
+											</div>
+											<div class="col-sm-1">
+											<div class="pull-left">
+											<button type="button" class="btn btn-default" >Exit</button >
+											</div>
+											</div> -->
+
+
+										
+									</div>	
+							</div>
+
+
+
+			</div>
+		</div>
+
+		
+
+			
+
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal({backdrop: true});
+    });
+    $("#myBtn2").click(function(){
+        $("#myModal2").modal({backdrop: false});
+    });
+    $("#myBtn3").click(function(){
+        $("#myModal3").modal({backdrop: "static"});
+    });
+});
+</script>
+
+					
+
+
+
+
+
+
+
+</body>
+</html>

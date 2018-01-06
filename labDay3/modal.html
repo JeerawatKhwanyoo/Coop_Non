@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-">
+  
+  <!-- Trigger the modal with a button -->
+
+  <button type="button" class="btn btn-info btn-md" id="myBtn2">Recorde information</button>
+ 
+
+
+						  <!-- Modal -->
+						  <div class="modal fade" id="myModal2" role="dialog">
+						    <div class="modal-dialog-lg">
+						    
+						      <!-- Modal content-->
+						    <div class="col-sm-12">
+						      <div class="modal-content">
+
+
+
+
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal">×</button>
+						          
+						        </div>
+
+
+
+
+						        <div class="row">
+									    					<div class="col-sm-12">
+										    					<div class="form-group">
+										    						<!-- row-col-sm-6 box1-->
+										    						<div class="col-sm-6">
+										    							<div class="col-sm-4">
+										    								<div class="form-group">
+										    									<h4></h4>
+										    								</div>
+										    						
+										    							</div>
+
+													    				<div class="col-sm-6">
+													    					<div class="form-group">
+													    					<input type="doc_no" class="form-control" id="doc_no" placeholder="DOC NO" >
+													    						</div>
+
+													    				</div>
+
+											    					</div>	
+											    					
+											    				
+											    				
+
+
+										    					</div>
+										    				</div>	
+									    				</div>
+
+									    			<!-- row2 -->
+									    				<br>
+									    				<div class="row">
+									    					<div class="col-sm-12">
+										    					<div class="form-group">
+										    						<!-- row-col-sm-6 box1-->
+										    						<div class="col-sm-6">
+										    						
+										    							<div class="col-sm-4">
+										    								<div class="form-group">
+										    									<h4>สร้างโดย</h4>
+										    								</div>
+										    						
+										    							</div>
+
+
+													    				<div class="col-sm-6">
+													    					<div class="form-group">
+													    					<input type="CRE_BY" class="form-control" id="CRE_BY" placeholder="CRE_BY" >
+													    						</div>
+
+													    				</div>
+
+											    					</div>	
+											    					<!-- row-col-sm-6 box2-->
+											    					<div class="row">
+											    					<div class="col-sm-6">
+											    						<div class="col-sm-4">
+										    								<div class="form-group"></div>
+										    									<h4>วันที่สร้าง</h4>
+										    								
+										    						
+										    							</div>
+
+
+													    				<div class="col-sm-5">
+													    					<div class="form-group">
+													    					<input type="CRE_DATE" class="form-control" id="CRE_DATE" placeholder="CRE_DATE" >
+													    						</div>
+
+													    				</div>
+
+											    					</div>
+											    					</div>
+
+
+										    					</div>
+										    				</div>	
+									    				</div>
+
+									    			<!-- row3 -->
+									    				<div class="row">
+									    					<div class="col-sm-12">
+										    					<div class="form-group">
+										    						<!-- row-col-sm-6 box1-->
+										    						<div class="col-sm-6">
+										    						
+										    							<div class="col-sm-4">
+										    								<div class="form-group">
+										    									<h4>ปรับปรุงโดย</h4>
+										    								</div>
+										    						
+										    							</div>
+
+
+													    				<div class="col-sm-6">
+													    					<div class="form-group">
+													    					<input type="CPD_BY" class="form-control" id="CPD_BY" placeholder="CPD_BY" >
+													    						</div>
+
+													    				</div>
+
+											    					</div>	
+											    					<!-- row-col-sm-6 box2-->
+											    					<div class="row">
+											    					<div class="col-sm-6">
+											    						<div class="col-sm-4">
+										    								<div class="form-group"></div>
+										    									<h4>วันที่ปรับปรุง</h4>
+										    								
+										    						
+										    							</div>
+
+
+
+
+
+													    				<div class="col-sm-5">
+													    					<div class="form-group">
+													    					<input type="UPD_DATE" class="form-control" id="UPD_DATE" placeholder="UPD_DATE" >
+													    						</div>
+
+													    				</div>
+
+											    					</div>
+											    					</div>
+
+
+										    					</div>
+										    				</div>	
+									    				</div>
+
+						        <div class="modal-body">
+						          
+						          
+						        </div>
+						        
+
+
+						        <div class="modal-footer">
+						        <button type="button" class="btn btn-default">บันทึก</button>
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+						        </div>
+						      </div>
+						     </div>
+						      
+						    </div>
+						  </div>
+						  
+    
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal({backdrop: true});
+    });
+    $("#myBtn2").click(function(){
+        $("#myModal2").modal({backdrop: false});
+    });
+    $("#myBtn3").click(function(){
+        $("#myModal3").modal({backdrop: "static"});
+    });
+});
+</script>
+
+</body>
+</html>

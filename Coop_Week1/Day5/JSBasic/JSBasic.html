@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+
+<!-- 1 -->
+<script>
+	var m = "Hello";	
+	var n = "Sorry";
+
+	document.writeln(m);
+	document.write(n);
+
+</script>
+<br>
+
+
+<!-- 2 -->
+<script>
+	var c = true;
+	var d = false;
+
+	document.writeln(c);
+	document.write(d);
+
+
+
+
+</script>
+
+<!-- 3 -->
+<p id="num"></p>
+
+<script>
+	var number = ["0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"]
+	document.getElementById("num").innerHTML = number;
+
+</script>
+
+
+<!-- 4 -->	
+<p id="ob"></p>
+<script>
+	var  object = {food:"Rice",drink:"Coco",fruit:"Orenge"};
+	document.getElementById("ob").innerHTML = 	object.food+" "+object.drink+" "+object.fruit;
+
+</script>
+
+<!-- 5 -->
+
+<p id="ob"></p>
+
+
+<script>
+	
+	var object = {	food:"Rice",
+					drink:"Coco",
+					fruit:"Orenge",
+
+				favorite : function(){
+						return this.food+" "+this.drink+" "+this.fruit;
+				}	
+	};
+
+	document.getElementById("ob").innerHTML =  object.favorite();
+
+</script>
+
+<br><br/>
+
+<!-- 6 -->
+
+<p id="ob"></p>
+<script>
+	
+function circleFunction(r,p){
+	return r*r*p;
+
+}
+
+document.getElementById("ob").innerHTML = circleFunction(4,3.14);
+
+
+	
+</script>
+
+
+
+<!-- 7 -->
+<p id="ob"></p>
+
+<script>
+	var i;
+	var sum;
+	for ( i = 0; i <=100; i++) {
+		if(i%5==0){
+			sum= i+<br>;
+		}
+	}
+	
+
+		document.getElementById("ob").innerHTML = sum;
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
