@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+        <meta charset="utf-8">
+
+        <style>
+          .rainbow {
+            background: red; /* not working, let's see some red */
+            background: -moz-linear-gradient( top ,
+                rgba(255, 0, 0, 1) 0%,
+                rgba(255, 255, 0, 1) 15%,
+                rgba(0, 255, 0, 1) 30%,
+                rgba(0, 255, 255, 1) 50%,
+                rgba(0, 0, 255, 1) 65%,
+                rgba(255, 0, 255, 1) 80%,
+                rgba(255, 0, 0, 1) 100%);
+            background: -webkit-gradient(linear,  left top,  left bottom,
+                color-stop(0%, rgba(255, 0, 0, 1)),
+                color-stop(15%, rgba(255, 255, 0, 1)),
+                color-stop(30%, rgba(0, 255, 0, 1)),
+                color-stop(50%, rgba(0, 255, 255, 1)),
+                color-stop(65%, rgba(0, 0, 255, 1)),
+                color-stop(80%, rgba(255, 0, 255, 1)),
+                color-stop(100%, rgba(255, 0, 0, 1)));
+        }
+        </style>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+
+
+
+
+
+
+                            <!-- Modal warning is'n numeric -->
+                            <div id="myModal1" class="modal fade">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h4>Warning</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                           <h4 style="text-align: center;"><b>Isn't Numeric.</b></h4>
+                                        </div>
+                                        <div class="modal-footer">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                              <!-- Modal Plus is blank. -->
+
+                            <div id="myModal2" class="modal fade">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h4>Warning</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                           <h4 style="text-align: center;"><b>Plus is blank.</b></h4>
+                                        </div>
+                                        <div class="modal-footer">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                              <!-- Multi is blank. -->
+
+                            <div id="myModal3" class="modal fade">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h4>Warning</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                           <h4 style="text-align: center;"><b>Multi is blank.</b></h4>
+                                        </div>
+                                        <div class="modal-footer">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+</div>
+</div>
+</div>
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+
+
+
+
+
+ <div class="container">
+ <div class="col-sm-12">
+   <ol class="breadcrumb">
+          <li class="breadcrumb-item" ><h5>Lab Bootstrap</h5></li>
+          <li class="breadcrumb-item active">Library</li>
+          </ol>
+
+                      <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#layout">Layout</a></li>
+                    <li><a data-toggle="tab" href="#element">Element</a></li>
+                    <li><a data-toggle="tab" href="#available">Available Class</a></li>
+                    <li><a data-toggle="tab" href="#jQuery">Lab jQuery</a></li>
+
+                  </ul>
+                  <p>
+                  <div class="tab-content">
+                    <div id="layout" class="tab-pane fade in active">
+
+                     <div class="panel panel-primary">
+                    <div class="panel-heading">
+                      <h3 class="panel-title visible-lg"> Grid System</h3>
+                    </div>
+                     <div class="panel-body"  style="border-color: #007acc;" >
+                          <!-- ...................................XS......................................... -->
+                              <p>&nbsp&nbsp&nbsp&nbspXS</p>
+                                <div class="col-xs-1">
+                                  <div class="well" style="text-align: center;">
+                                  1
+                                  </div>
+                                </div>
+                                 <div class="col-xs-1">
+                                  <div class="well" style="text-align: center;">
+                                  2
+                                  </div>
+                                </div>
+                                 <div class="col-xs-1">
+                                  <div class="well" style="text-align: center;">
+                                  3
+                                  </div>
+                                </div>
+                                 <div class="col-xs-1">
+                                  <div class="well" style="text-align: center;">
+                                  4
+                                  </div>
+                                </div>
+                                 <div class="col-xs-1">
+                                  <div class="well" style="text-align: center;">
+                                  5
+                                  </div>
+                                </div>
+                                 <div class="col-xs-1">
+                                  <div class="well" style="text-align: center;">
+                                  6
+                                  </div>
+                                </div>
+                                 <div class="col-xs-1">
+                                  <div class="well" style="text-align: center;">
+                                  7
+                                  </div>
+                                </div>
+                                 <div class="col-xs-1">
+                                  <div class="well" style="text-align: center;">
+                                  8
+                                  </div>
+                                </div>
+                                 <div class="col-xs-1">
+                                  <div class="well" style="text-align: center;">
+                                  9
+                                  </div>
+                                </div>
+                                 <div class="col-xs-1">
+                                  <div class="well" style="text-align: center;">
+                                  10
+                                  </div>
+                                </div>
+                                 <div class="col-xs-1">
+                                  <div class="well" style="text-align: center;">
+                                  11
+                                  </div>
+                                </div>
+                                 <div class="col-xs-1">
+                                  <div class="well" style="text-align: center;">
+                                  12
+                                  </div>
+                                </div>
+    <!-- ......................................SM................................................. -->
+
+                                <p>&nbsp&nbsp&nbsp&nbspSM</p>
+                                <div class="col-sm-1">
+                                  <div class="well" style="text-align: center;">
+                                  1
+                                  </div>
+                                </div>
+                                 <div class="col-sm-1">
+                                  <div class="well" style="text-align: center;">
+                                  2
+                                  </div>
+                                </div>
+                                 <div class="col-sm-1">
+                                  <div class="well" style="text-align: center;">
+                                  3
+                                  </div>
+                                </div>
+                                 <div class="col-sm-1">
+                                  <div class="well" style="text-align: center;">
+                                  4
+                                  </div>
+                                </div>
+                                 <div class="col-sm-1">
+                                  <div class="well" style="text-align: center;">
+                                  5
+                                  </div>
+                                </div>
+                                 <div class="col-sm-1">
+                                  <div class="well" style="text-align: center;">
+                                  6
+                                  </div>
+                                </div>
+                                 <div class="col-sm-1">
+                                  <div class="well" style="text-align: center;">
+                                  7
+                                  </div>
+                                </div>
+                                 <div class="col-sm-1">
+                                  <div class="well" style="text-align: center;">
+                                  8
+                                  </div>
+                                </div>
+                                 <div class="col-sm-1">
+                                  <div class="well" style="text-align: center;">
+                                  9
+                                  </div>
+                                </div>
+                                 <div class="col-sm-1">
+                                  <div class="well" style="text-align: center;">
+                                  10
+                                  </div>
+                                </div>
+                                 <div class="col-sm-1">
+                                  <div class="well" style="text-align: center;">
+                                  11
+                                  </div>
+                                </div>
+                                 <div class="col-sm-1">
+                                  <div class="well" style="text-align: center;">
+                                  12
+                                  </div>
+                                </div>
+<!-- ..................................................MD.................................................. -->
+
+                                <p>&nbsp&nbsp&nbsp&nbspMD</p>
+                                <div class="col-md-1">
+                                  <div class="well" style="text-align: center;">
+                                  1
+                                  </div>
+                                </div>
+                                 <div class="col-md-1">
+                                  <div class="well" style="text-align: center;">
+                                  2
+                                  </div>
+                                </div>
+                                 <div class="col-md-1">
+                                  <div class="well" style="text-align: center;">
+                                  3
+                                  </div>
+                                </div>
+                                 <div class="col-md-1">
+                                  <div class="well" style="text-align: center;">
+                                  4
+                                  </div>
+                                </div>
+                                 <div class="col-md-1">
+                                  <div class="well" style="text-align: center;">
+                                  5
+                                  </div>
+                                </div>
+                                 <div class="col-md-1">
+                                  <div class="well" style="text-align: center;">
+                                  6
+                                  </div>
+                                </div>
+                                 <div class="col-md-1">
+                                  <div class="well" style="text-align: center;">
+                                  7
+                                  </div>
+                                </div>
+                                 <div class="col-md-1">
+                                  <div class="well" style="text-align: center;">
+                                  8
+                                  </div>
+                                </div>
+                                 <div class="col-md-1">
+                                  <div class="well" style="text-align: center;">
+                                  9
+                                  </div>
+                                </div>
+                                 <div class="col-md-1">
+                                  <div class="well" style="text-align: center;">
+                                  10
+                                  </div>
+                                </div>
+                                 <div class="col-md-1">
+                                  <div class="well" style="text-align: center;">
+                                  11
+                                  </div>
+                                </div>
+                                 <div class="col-md-1">
+                                  <div class="well" style="text-align: center;">
+                                  12
+                                  </div>
+                                </div>
+
+<!-- ......................................LG................................................. -->
+                            <p>&nbsp&nbsp&nbsp&nbspLG</p>
+                                <div class="col-lg-1">
+                                  <div class="well" style="text-align: center;">
+                                  1
+                                  </div>
+                                </div>
+                                 <div class="col-lg-1">
+                                  <div class="well" style="text-align: center;">
+                                  2
+                                  </div>
+                                </div>
+                                 <div class="col-lg-1">
+                                  <div class="well" style="text-align: center;">
+                                  3
+                                  </div>
+                                </div>
+                                 <div class="col-lg-1">
+                                  <div class="well" style="text-align: center;">
+                                  4
+                                  </div>
+                                </div>
+                                 <div class="col-lg-1">
+                                  <div class="well" style="text-align: center;">
+                                  5
+                                  </div>
+                                </div>
+                                 <div class="col-lg-1">
+                                  <div class="well" style="text-align: center;">
+                                  6
+                                  </div>
+                                </div>
+                                 <div class="col-lg-1">
+                                  <div class="well" style="text-align: center;">
+                                  7
+                                  </div>
+                                </div>
+                                 <div class="col-lg-1">
+                                  <div class="well" style="text-align: center;">
+                                  8
+                                  </div>
+                                </div>
+                                 <div class="col-lg-1">
+                                  <div class="well" style="text-align: center;">
+                                  9
+                                  </div>
+                                </div>
+                                 <div class="col-lg-1">
+                                  <div class="well" style="text-align: center;">
+                                  10
+                                  </div>
+                                </div>
+                                 <div class="col-lg-1">
+                                  <div class="well" style="text-align: center;">
+                                  11
+                                  </div>
+                                </div>
+                                 <div class="col-lg-1">
+                                  <div class="well" style="text-align: center;">
+                                  12
+                                  </div>
+                                </div>
+
+
+
+                              </div>
+
+
+
+                  </div>
+
+
+
+
+  </div>
+
+
+<!-- /////////////////////////////////////////////TAB2////////////////////////////////////////////// -->
+  <div id="element" class="tab-pane fade">
+         <div class="panel-group" id="accordion">
+          <!-- Textfield -->
+             <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        Textfield</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body">
+            <div class="col-sm-6">
+                      <input class="form-control" name="Textfield" placeholder="Textfield" />
+                      </div>
+
+    </div>
+    </div>
+  </div>
+            <!-- Datefiled -->
+            <div class="panel panel-info">
+               <div class="panel-heading">
+                 <h4 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Datefield</a>
+                </h4>
+               </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                      <div class="panel-body">
+                      <div class="col-sm-6">
+                      <input type="date" name="bday"/ style="width: 510px; height: 40px;">
+                      </div>
+                      </div>
+                    </div>
+            </div>
+
+            <!-- Button -->
+            <div class="panel panel-success">
+               <div class="panel-heading">
+                 <h4 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Button</a>
+                </h4>
+               </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <div class="row">
+                          <div class="col-sm-12">
+                         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                              <button type="button" class="btn btn-default">Default</button>
+
+                              <!-- Secondary, outline button -->
+                              <button type="button" class="btn btn-primary">Primary</button>
+
+                              <!-- Indicates a successful or positive action -->
+                              <button type="button" class="btn btn-success">Success</button>
+
+                              <!-- Contextual button for informational alert messages -->
+                              <button type="button" class="btn btn-info">Info</button>
+
+                              <!-- Indicates caution should be taken with this action -->
+                              <button type="button" class="btn btn-warning">Warning</button>
+
+                              <!-- Indicates a dangerous or potentially negative action -->
+                              <button type="button" class="btn btn-danger">Danger</button>
+
+                              <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+                              <button type="button" class="btn btn-link">Link</button>
+                              </div>
+                              </div>
+                                <p></p>
+                              <div class="row">
+                          <div class="col-sm-12">
+                         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                              <button type="button" class="btn btn-default btn-lg">Default</button>
+
+                              <!-- Secondary, outline button -->
+                              <button type="button" class="btn btn-primary">Primary</button>
+
+                              <!-- Indicates a successful or positive action -->
+                              <button type="button" class="btn btn-success btn-sm">Success</button>
+
+                              <!-- Contextual button for informational alert messages -->
+                              <button type="button" class="btn btn-info btn-xs">Info</button>
+
+                              <!-- Indicates caution should be taken with this action -->
+                              <button type="button" class="btn btn-warning active">Warning</button>
+
+                              <!-- Indicates a dangerous or potentially negative action -->
+                              <button type="button" class="btn btn-danger" disabled="true">Danger</button>
+                              </div>
+                              </div>
+                      </div>
+
+                    </div>
+            </div>
+            <!--  Text -->
+            <div class="panel panel-warning">
+               <div class="panel-heading">
+                 <h4 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Text</a>
+                </h4>
+               </div>
+                    <div id="collapse4" class="panel-collapse collapse">
+                      <div class="panel-body">
+                             <label class="control-lanel">
+                               A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+                             </label>
+                      </div>
+                    </div>
+            </div>
+            <!-- Radio -->
+             <div class="panel panel-danger">
+               <div class="panel-heading">
+                 <h4 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Radio</a>
+                </h4>
+               </div>
+                    <div id="collapse5" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <form>
+                        <div class="col-sm-6">
+                        <div class="radio">
+                          <label><input class="optionradio" type="radio" name="optradio">Cat</label>
+                        </div>
+
+
+                         <div class="radio">
+                          <label><input class="optionradio" type="radio" name="optradio">Dog</label>
+                        </div>
+
+                      </div>
+                      </form>
+
+
+                        <form>
+                           <div class="col-sm-6">
+                            <div class="radio">
+                              <label><input class="radioinline" type="radio" name="optradio">Cat</label>
+                              <label><input class="radioinline" type="radio" name="optradio">Dog</label>
+                              <label><input class="radioinline" type="radio" name="optradio">Tiger</label>
+                            </div>
+                          </form>
+                        </div>
+
+
+
+
+
+
+                          </div>
+
+
+
+
+                      </div>
+                    </div>
+
+
+           <!--  Checkbox -->
+           <div class="panel panel-default">
+               <div class="panel-heading">
+                 <h4 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Checkbox</a>
+                </h4>
+               </div>
+                    <div id="collapse6" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <form>
+                          <div class="col-sm-6">
+                              <label class="checkbox-inline">
+                                <input type="checkbox" value="">Cat
+                              </label>
+
+                              </div>
+                        </form>
+
+                          <label class="checkbox-inline">
+                                <input type="checkbox" value="">Cat
+                              </label>
+                              <label class="checkbox-inline">
+                                <input type="checkbox" value="">Dog
+                              </label>
+                              <label class="checkbox-inline">
+                                <input type="checkbox" value="">Tiger
+                              </label>
+
+
+                         <form>
+                          <div class="col-sm-6">
+                              <label class="checkbox-inline">
+                                <input type="checkbox" value="" disabled="true">Dog
+                              </label>
+
+                              </div>
+                        </form>
+
+                      </div>
+                    </div>
+            </div>
+
+         <!--    File -->
+          <div class="panel panel-info">
+               <div class="panel-heading">
+                 <h4 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">File</a>
+                </h4>
+               </div>
+                    <div id="collapse7" class="panel-collapse collapse">
+                      <div class="panel-body">
+                         <div class="form-group">
+                              <label for="exampleInputFile">Choose file</label>
+                              <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                              <small id="fileHelp" class="form-text text-muted">
+                              </small>
+                                 </div>
+                      </div>
+                    </div>
+            </div>
+
+        <!--     Table -->
+
+          <div class="panel panel-success">
+               <div class="panel-heading">
+                 <h4 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">Table</a>
+                </h4>
+               </div>
+                    <div id="collapse8" class="panel-collapse collapse">
+                      <div class="panel-body">
+                      <div class="col-sm-6">
+                        <table class="table table-hover">
+                              <thead>
+                                <tr>
+                                  <th>Firstname</th>
+                                  <th>Lastname</th>
+                                  <th>Nickname</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Jaidee </td>
+                                  <td>Jingjing </td>
+                                  <td>Jai</td>
+                                </tr>
+                                <tr>
+                                  <td>Sawasdee</td>
+                                  <td>Eiei</td>
+                                  <td>Dee</td>
+                                </tr>
+                                <tr>
+                                  <td>Somjai</td>
+                                  <td>Teesud</td>
+                                  <td>Som</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            </div>
+                              <div class="col-sm-6">
+                              <table class="table table-bordered">
+                                    <thead>
+                                      <tr>
+                                        <th>Firstname</th>
+                                        <th>Lastname</th>
+                                        <th>Nickname</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>Jaidee</td>
+                                        <td>Jingjing</td>
+                                        <td>Jai</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Sawasdee</td>
+                                        <td>Eiei</td>
+                                        <td>Dee</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Somjai</td>
+                                        <td>Teesud</td>
+                                        <td>Som</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  </div>
+
+
+                      </div>
+                    </div>
+            </div>
+
+           <!--  Form -->
+           <div class="panel panel-danger">
+                       <div class="panel-heading">
+                         <h4 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">Form</a>
+                        </h4>
+                        </div>
+                      <div id="collapse9" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="col-sm-12">
+                            <div class="col-sm-6">
+                              <form role="form">
+                                <div class="form-group">
+
+                                  <label for="exampleInputEmail1">
+                                    Email address
+                                  </label>
+                                  <input class="form-control" id="exampleInputEmail1" type="email" />
+                                </div>
+                                <div class="form-group">
+
+                                  <label for="exampleInputPassword1">
+                                    Password
+                                  </label>
+                                  <input class="form-control" id="exampleInputPassword1" type="password" />
+                                </div>
+                                <button type="submit" class="btn btn-default">
+                                  Submit
+                                </button>
+                              </form>
+                            </div>
+                            <div class="col-sm-6">
+                              <form class="form-horizontal" role="form">
+                                <div class="form-group">
+
+                                  <label for="inputEmail3" class="col-sm-2 control-label">
+                                    Email
+                                  </label>
+                                  <div class="col-sm-10">
+                                    <input class="form-control" id="inputEmail3" type="email" />
+                                  </div>
+                                </div>
+                                <div class="form-group">
+
+                                  <label for="inputPassword3" class="col-sm-2 control-label">
+                                    Password
+                                  </label>
+                                  <div class="col-sm-10">
+                                    <input class="form-control" id="inputPassword3" type="password" />
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <div class="col-sm-offset-2 col-sm-10">
+                                    <div class="checkbox">
+
+                                      <label>
+                                        <input type="checkbox" /> Remember me
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <div class="col-sm-offset-2 col-sm-10">
+
+                                    <button type="submit" class="btn btn-default">
+                                      Sign in
+                                    </button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                          <div class="col-sm-12">
+                            <div class="col-sm-8">
+                              <label class="control-label">Inline</label>
+                              <form class="form-inline">
+                                <div class="form-group">
+                                  <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                  <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+                                </div>
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox"> Remember me
+                                  </label>
+                                </div>
+                                <button type="submit" class="btn btn-default">Sign in</button>
+                              </form>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+            <!-- Modal -->
+
+             <div class="panel panel-warning">
+               <div class="panel-heading">
+                 <h4 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">Modal</a>
+                </h4>
+               </div>
+                    <div id="collapse10" class="panel-collapse collapse">
+                      <div class="panel-body">
+                             <div class="col-sm-12">
+                             <!-- Button trigger modal -->
+                                  <div class="col-sm-3">
+                                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                    Modal Small
+                                  </button>
+                                  </div>
+
+
+                                  <!-- Modal Small -->
+                                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-sm" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h4 class="modal-title" id="exampleModalLabel">Modal Small</h4>
+
+                                        </div>
+                                        <div class="modal-body">
+                                          <div class="control-label">
+                                          <span class="glyphicon glyphicon-sunglasses"></span>
+                                          <b>Hello World</b>
+                                          </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                                          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                 <!--  Modal Default -->
+
+                               <!-- Trigger the modal with a button -->
+                                <div class="col-sm-3">
+
+                                      <!-- Trigger the modal with a button -->
+                                      <button type="button" class="btn btn-primary btn-default" data-toggle="modal" data-target="#myModal">
+                                      Modal Default</button>
+
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="myModal" role="dialog">
+                                        <div class="modal-dialog">
+
+                                          <!-- Modal content-->
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                              <h4 class="modal-title">Modal Header</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                             <a href="#" class="nounderline">
+                                                      <div class="btn-group">
+                                                       <span class="glyphicon glyphicon-sunglasses"></span>
+                                                          <b>Hello World</b>
+                                                      </div>
+                                                    </a>
+                                                </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close </button>
+                                            </div>
+                                          </div>
+
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                  <!-- Modal Large -->
+                                  <div class="col-sm-3">
+                                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+                                  </div>
+
+                                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                          <div class="modal-header" ">
+                                          <h5 class="modal-title" id="exampleModalLabel">
+                                            <div class="alert alert-info alert-dismissable" style="text-align: center;">
+                                                <h4>Modal Large</h4>
+                                              </div>
+                                          </h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="form-horizontal">
+                                      <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">Firstname</label>
+                                        <div class="col-sm-4">
+                                          <input type="email" class="form-control" id="inputEmail3" placeholder="Firstname">
+                                        </div>
+                                        <label for="inputPassword3" class="col-sm-1 control-label">Lastname</label>
+                                        <div class="col-sm-4">
+                                          <input type="password" class="form-control" id="inputPassword3" placeholder="Lastname">
+                                        </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="inputPassword3" class="col-sm-2 control-label">Address</label>
+                                        <div class="col-sm-9">
+                                          <input type="password" class="form-control" id="inputPassword3" placeholder="Lastname">
+                                        </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <div class="col-sm-8 col-sm-offset-2">
+                                          <label class="checkbox-inline" data-toggle="tooltip" data-placement="left" title="Home">
+                                          <input type="checkbox" id="inlineCheckbox1" value="option1"> Home
+                                        </label>
+                                        <label class="checkbox-inline" data-toggle="tooltip" data-placement="left" title="Townhouse">
+                                          <input type="checkbox" id="inlineCheckbox2" value="option2"> Townhouse
+                                        </label>
+                                        <label class="checkbox-inline" data-toggle="tooltip" data-placement="left" title="Condominium">
+                                          <input type="checkbox" id="inlineCheckbox3" value="option3"> Condominium
+                                        </label>
+                                      </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <div class="col-sm-8 col-sm-offset-2">
+                                          <label class="radio-inline">
+                                          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Male
+                                        </label>
+                                        <label class="radio-inline">
+                                          <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Female
+                                        </label>
+                                        </div>
+                                      </div>
+                                    </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                                          <button type="button" class="btn btn-danger" data-dismiss="modal">Close </button>
+                                        </div>
+                                        </div>
+                                      </div>
+
+
+
+
+
+
+
+                             </div>
+
+
+                      </div>
+                    </div>
+            </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+        </div>  <!--  panel-group  accordion-->
+  </div>      <!-- tab-pane fade -->
+
+
+
+
+<!-- //////////////////////////////////////////////TAB3///////////////////////////// -->
+
+
+
+
+
+<div id="available" class="tab-pane fade">
+      <div class="panel panel-primary">
+                    <div class="panel-heading">
+
+                      <h3 class="panel-title visible-xs">Available Class-xs</h3>
+                      <h3 class="panel-title visible-sm">Available Class-sm</h3>
+                      <h3 class="panel-title visible-md">Available Class-md</h3>
+                      <h3 class="panel-title visible-lg">Available Class-lg</h3>
+                    </div>
+                     <div class="panel-body"  style="border-color: #007acc;" >
+                          <!-- ...................................XS......................................... -->
+
+                          <div class="thumbnail">
+                             <p></p>
+                                <img src="IcedAmericano.jpg" alt="Nature" style="width:50%; height: 50%;" class="img hidden-xs">
+                                <div class="caption">
+
+                                </div>
+
+                            </div>
+
+
+                              </div>
+
+
+
+                  </div>
+
+    </div>   <!-- tab-pane fade -->
+
+<!-- /////////////////////////////////////////////TAB4////////////////////////////////////////// -->
+
+<div id="jQuery" class="tab-pane fade">
+ <div class="panel panel-primary">
+                    <div class="panel-heading">
+                      <h3 class="panel-title visible-lg"> Lab jQuery</h3>
+                    </div>
+                     <div class="panel-body"  style="border-color: #007acc;" >
+                          <!-- ...................................XS......................................... -->
+                        <div class="col-sm-12">
+                              <form class="form-horizontal" role="form">
+                               <!-- ///////Value1///// -->
+                                <div class="form-group">
+                                  <label for="inputValue1" class="col-sm-1 control-label text-default">
+                                  &nbsp
+                                    <font color=#ff0000>V</font><font color=#da6924>a</font><font color=#b6c048>l</font><font color=#91f46d>u</font><font color=#6dfc91>e</font> <font color=#2489da>1</font>
+                                  </label>
+                                  <div class="col-sm-4">
+                                    <input class="form-control " id="mouseenterValue1" type="Value1" placeholder="Value1" />
+
+                                </div>
+
+                                     <div class="col-sm-2">
+                                    <button class="btn btn-default" type="button" id="btOK1">OK</button>
+                                    <button class="btn btn-default" type="button" id="btCH1">Change</button>
+                                  </div>
+
+                                  <label class="control-label col-sm-2" style="text-align: center;">
+                                    <font color=#ff0000>C</font><font color=#eb3a13>u</font><font color=#d77127>r</font><font color=#c4a23a>r</font><font color=#b0cb4e>e</font><font color=#9ce962>n</font><font color=#89fa75>t</font> <font color=#62f59c>V</font><font color=#4edfb0>a</font><font color=#3abcc4>l</font><font color=#2790d7>u</font><font color=#135ceb>e</font>
+
+                                  </label>
+                                  <div class=" col-sm-2">
+                                    <input class="form-control" id="output1" type="email" disabled="true"  placeholder="Value1"/>
+                                  </div>
+
+
+                                </div>
+                                 <!-- ///////Value2///// -->
+                                <div class="form-group">
+                                  <label for="value2" class="col-sm-1 control-label text-primary" >
+                                    Value 2
+                                  </label>
+                                  <div class="col-sm-4">
+                                    <input class="form-control" id="mouseenterValue2" type="Value2" placeholder="Value2" />
+                                  </div>
+                                        <div class="col-sm-2">
+                                          <button class="btn btn-primary" type="button" id="btOK2">OK</button>
+                                          <button class="btn btn-primary" type="button" id="btCH2">Change</button>
+                                        </div>
+
+                                         <label for="inputValue2" class="col-sm-2 control-label text-primary" style="text-align: center;">
+                                             Current Value
+                                          </label>
+                                          <div class=" col-sm-2">
+                                            <input class="form-control" id="output2" type="email" placeholder="Value2" disabled="true" />
+                                          </div>
+
+                                </div>
+                               <!--  ///////Value3///// -->
+                                <div class="form-group">
+                                  <label for="inputValue3" class="col-sm-1 control-label text-success"  >
+                                    Value 3
+                                  </label>
+                                  <div class="col-sm-4">
+                                    <input class="form-control" id="mouseenterValue3" type="Value3" placeholder="Value3" />
+                                  </div>
+                                          <div class="col-sm-2">
+                                            <button class="btn btn-success" type="button" id="btOK3">OK</button>
+                                            <button class="btn btn-success" type="button" id="btCH3">Change</button>
+                                         </div>
+
+                                                  <label for="inputValue3" class="col-sm-2 control-label text-success" style="text-align: center;">
+                                             Current Value
+                                          </label>
+                                          <div class=" col-sm-2">
+                                            <input class="form-control" id="output3" type="email" disabled="true"  placeholder="Value3"/>
+                                          </div>
+
+                                </div>
+                               <!--  ///////Value4///// -->
+                                 <div class="form-group">
+                                  <label for="inputValue4" class="col-sm-1 control-label text-warning">
+                                    Value 4
+                                  </label>
+                                  <div class="col-sm-4">
+                                    <input class="form-control" id="mouseenterValue4" type="Value4" placeholder="Value4" />
+                                  </div>
+                                          <div class="col-sm-2">
+                                            <button class="btn btn-warning" type="button" id="btOK4">OK</button>
+                                            <button class="btn btn-warning" type="button" id="btCH4">Change</button>
+                                        </div>
+
+                                                 <label for="inputValue4" class="col-sm-2 control-label text-warning"
+                                                 style="text-align: center;">
+                                             Current Value
+                                          </label>
+                                          <div class=" col-sm-2">
+                                            <input class="form-control" id="output4" type="email" disabled="true" placeholder="Value4" />
+                                          </div>
+
+                                </div>
+                               <!--  ///////Value5///// -->
+                                <div class="form-group">
+                                  <label for="inputValue5" class="col-sm-1 control-label text-danger">
+                                    Value5
+                                  </label>
+                                  <div class="col-sm-4">
+                                    <input class="form-control" id="mouseenterValue5" type="Value5"  placeholder="Value5" />
+                                  </div>
+                                        <div class="col-sm-2">
+                                          <button class="btn btn-danger" type="button" id="btOK5">OK</button>
+                                          <button class="btn btn-danger" type="button" id="btCH5">Change</button>
+                                        </div>
+                                         <label for="inputValue5" class="col-sm-2 control-label text-danger" style="text-align: center;">
+                                             Current Value
+                                          </label>
+                                          <div class=" col-sm-2">
+                                            <input class="form-control" id="output5" type="email" disabled="true" placeholder="Value5" />
+                                          </div>
+
+                                </div>
+
+                              <!--   ///////////////////////// -->
+                              <div class="form-group">
+                                  <label for="inputPassword3" class="col-sm-1 control-label">
+
+                                  </label>
+                                  <div class="col-sm-4">
+                                    <input class="form-control" id="output_plus" type="pass" disabled="true" placeholder="Plus" />
+                                  </div>
+
+                                   <div class="col-sm-1">
+                                          <button class="btn btn-primary" type="button" id="num_plus">Plus</button>
+                                        </div>
+                                  </div>
+                              <!--   ///////////////////////// -->
+                              <div class="form-group">
+                                  <label for="inputPassword3" class="col-sm-1 control-label">
+
+                                  </label>
+                                  <div class="col-sm-4">
+                                    <input class="form-control" id="output_mul"  disabled="true" placeholder="Multyply" />
+                                  </div>
+                                   <div class="col-sm-1">
+                                          <button class="btn btn-primary" type="button" id="num_mul">Multyply</button>
+                                        </div>
+                                  </div>
+                                <!-- /////////////Button///////////////////// -->
+                                       <div class="form-group">
+                                        <label for="inputPassword3" class="col-sm-1 control-label">
+
+                                        </label>
+
+                                          <div class="col-sm-1">
+                                                <button class="btn btn-primary" type="button" id="sb1">Submit</button>
+
+                                              </div>
+
+                                          <div class="col-sm-1">
+                                           <button class="btn btn-danger" type="button" id="rs1">Reset</button>
+                                          </div>
+
+
+
+                                           <div class="col-sm-offset-2 col-sm-3">
+                                           <button class="btn btn-default" type="button">Random Color</button>
+                                           <button class="btn btn-danger" type="button">Clear</button>
+                                          </div>
+
+
+                                        </div>
+
+                                            <div class="form-group">
+                                              <div class="col-sm-2">
+                                                <label for="_label_historyplus" class="control-label">
+                                                History Plus:
+                                                </label>
+                                              </div>
+
+                                              <div class="col-sm-3" >
+                                                <table class="table table-bordered table-condensed">
+                                                  <tbody id="_tbody_plus">
+                                                  </tbody>
+                                                </table>
+                                              </div>
+                                              <div class="col-sm-2">
+                                                <label for="_label_historymultiplied" class="control-label">
+                                                History Multiply:
+                                                </label>
+                                              </div>
+                                              <div class="col-sm-3">
+                                                <table class="table table-bordered table-condensed">
+                                                  <tbody id="_tbody_multiplied">
+                                                  </tbody>
+                                                </table>
+                                              </div>
+                                            </div>
+
+
+                                </div>
+                                <!-- ////// -->
+
+                              </form>
+
+
+                            </div> <!--  ///col-sm-12//// -->
+
+
+
+                              </div>
+
+
+
+                  </div>
+
+
+
+    </div>
+
+  <!-- //////////////////////////////////////////////////////////////////////////  -->
+</div>
+</p>
+</div>
+</div>
+
+
+<script src="jquery-1.11.3.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script type="text/javascript">
+
+
+            $(document).ready(function(){
+
+
+
+                     $("#mouseenterValue1").on({
+                    mouseenter: function(){
+                        $("#mouseenterValue1").addClass('rainbow');
+                    },
+                    mouseleave: function(){
+                        $("#mouseenterValue1").removeClass('rainbow');
+                    },
+
+
+                });
+
+
+
+
+
+                $("#mouseenterValue2").on({
+                    mouseenter: function(){
+                        $(this).css("background-color", "#00ccff");
+                    },
+                    mouseleave: function(){
+                        $(this).css("background-color", "#ffffff");
+                    },
+
+
+                });
+
+                 $("#mouseenterValue3").on({
+                    mouseenter: function(){
+                        $(this).css("background-color", "#4dff4d");
+                    },
+                    mouseleave: function(){
+                        $(this).css("background-color", "#ffffff");
+                    },
+
+
+                });
+
+
+                   $("#mouseenterValue4").on({
+                    mouseenter: function(){
+                        $(this).css("background-color", "#ffd11a");
+                    },
+                    mouseleave: function(){
+                        $(this).css("background-color", "#ffffff");
+                    },
+
+
+                });
+
+
+                    $("#mouseenterValue5").on({
+                    mouseenter: function(){
+                        $(this).css("background-color", "#ff4d4d");
+                    },
+                    mouseleave: function(){
+                        $(this).css("background-color", "#ffffff");
+                    },
+
+
+                });
+
+
+///////////////////////////////////////////////Value1/////////////////////////////////////////////////
+
+
+
+
+
+                     $('#btOK1').on('click',function(){
+
+                        var data = $('#mouseenterValue1').val();
+
+                        if(data== ''){
+                          $('#output1').val(0);
+                          $('#mouseenterValue1').val(0);
+                          $('#mouseenterValue1').prop('disabled',true).css("background-color", "#cccccc");
+
+
+                        }else if(isFinite(String(data))){
+                            $('#output1').val($('#mouseenterValue1').val());
+                            $('#mouseenterValue1').prop('disabled',true).css("background-color", "#cccccc");
+
+                        }else if(typeof data == 'string'){
+                            $("#myModal1").modal('show');
+                            $('#mouseenterValue1').val('');
+                            $('#mouseenterValue1').prop('disabled',false).css("background-color", "#ffffff");
+
+                        }
+
+                      });
+
+
+
+
+
+                       $('#btCH1 ').click(function(){
+                        $('#mouseenterValue1').prop('disabled',false).css("background-color", "#ffffff");
+                      });
+
+ ///////////////////////////////////////////////Value2/////////////////////////////////////////////////
+
+                      $('#btOK2').on('click',function(){
+
+                        var data = $('#mouseenterValue2').val();
+
+                        if(data== ''){
+                          $('#output2').val(0);
+                          $('#mouseenterValue2').val(0);
+                          $('#mouseenterValue2').prop('disabled',true).css("background-color", "#cccccc");
+
+                        }else if(isFinite(String(data))){
+                            $('#output2').val($('#mouseenterValue2').val());
+                            $('#mouseenterValue2').prop('disabled',true).css("background-color", "#cccccc");
+
+                        }else if(typeof data == 'string'){
+                            $("#myModal1").modal('show');
+                            $('#mouseenterValue2').val('');
+                            $('#mouseenterValue2').prop('disabled',false).css("background-color", "#ffffff");
+
+                        }
+
+                      });
+
+
+                       $('#btCH2 ').click(function(){
+                        $('#mouseenterValue2').prop('disabled',false).css("background-color", "#ffffff");
+                      });
+
+///////////////////////////////////////////////Value3/////////////////////////////////////////////////
+
+                         $('#btOK3').on('click',function(){
+
+                        var data = $('#mouseenterValue3').val();
+
+                        if(data== ''){
+                          $('#output3').val(0);
+                          $('#mouseenterValue3').val(0);
+                          $('#mouseenterValue3').prop('disabled',true).css("background-color", "#cccccc");
+
+                        }else if(isFinite(String(data))){
+                            $('#output3').val($('#mouseenterValue3').val());
+                            $('#mouseenterValue3').prop('disabled',true).css("background-color", "#cccccc");
+
+                        }else if(typeof data == 'string'){
+                            $("#myModal1").modal('show');
+                            $('#mouseenterValue3').val('');
+                            $('#mouseenterValue3').prop('disabled',false).css("background-color", "#ffffff");
+
+                        }
+
+                      });
+
+
+                       $('#btCH3 ').click(function(){
+                        $('#mouseenterValue3').prop('disabled',false).css("background-color", "#ffffff");
+                      });
+
+///////////////////////////////////////////////Value4/////////////////////////////////////////////////
+                          $('#btOK4').on('click',function(){
+
+                        var data = $('#mouseenterValue4').val();
+
+                        if(data== ''){
+                          $('#output4').val(0);
+                          $('#mouseenterValue4').val(0);
+                          $('#mouseenterValue4').prop('disabled',true).css("background-color", "#cccccc");
+
+
+                        }else if(isFinite(String(data))){
+                            $('#output4').val($('#mouseenterValue4').val());
+                            $('#mouseenterValue4').prop('disabled',true).css("background-color", "#cccccc");
+
+                        }else if(typeof data == 'string'){
+                            $("#myModal1").modal('show');
+                            $('#mouseenterValue4').val('');
+                            $('#mouseenterValue4').prop('disabled',false).css("background-color", "#ffffff");
+                        }
+
+                      });
+
+                       $('#btCH4 ').click(function(){
+                        $('#mouseenterValue4').prop('disabled',false).css("background-color", "#ffffff");
+                      });
+
+///////////////////////////////////////////////Value5/////////////////////////////////////////////////
+                          $('#btOK5').on('click',function(){
+
+                        var data = $('#mouseenterValue5').val();
+
+                        if(data== ''){
+                          $('#output5').val(0);
+                          $('#mouseenterValue5').val(0);
+                          $('#mouseenterValue5').prop('disabled',true).css("background-color", "#cccccc");
+                        }else if(isFinite(String(data))){
+                            $('#output5').val($('#mouseenterValue5').val());
+                            $('#mouseenterValue5').prop('disabled',true).css("background-color", "#cccccc");
+
+                        }else if(typeof data == 'string'){
+                            $("#myModal1").modal('show');
+                            $('#mouseenterValue5').val('');
+                            $('#mouseenterValue5').prop('disabled',false).css("background-color", "#ffffff");
+
+                        }
+
+                      });
+
+
+                       $('#btCH5 ').click(function(){
+                        $('#mouseenterValue5').prop('disabled',false).css("background-color", "#ffffff");
+                      });
+
+///////////////////////////////////////Plus//////////////////////////////////////////////////
+
+
+                    $('#num_plus').on('click',function(){
+                         var num_Value1 = parseInt($('#output1').val());
+                         var num_Value2 = parseInt($('#output2').val());
+                         var num_Value3 = parseInt($('#output3').val());
+                         var num_Value4 = parseInt($('#output4').val());
+                         var num_Value5 = parseInt($('#output5').val());
+                          num_Value1 = num_Value1||0;
+                          num_Value2 = num_Value2||0;
+                          num_Value3 = num_Value3||0;
+                          num_Value4 = num_Value4||0;
+                          num_Value5 = num_Value5||0;
+                          var totals = totals||0;
+                          totals =  parseFloat(num_Value1 + num_Value2 +  num_Value3 +  num_Value4 +  num_Value5);
+                         $('#output_plus').val(totals);
+
+                    });
+
+                    $('#num_mul').on('click',function(){
+
+                         var num_Value1 = parseInt($('#output1').val() == '' ? 1 : $('#output1').val());
+                         var num_Value2 = parseInt($('#output2').val() == '' ? 1 : $('#output2').val());
+                         var num_Value3 = parseInt($('#output3').val() == '' ? 1 : $('#output3').val());
+                         var num_Value4 = parseInt($('#output4').val() == '' ? 1 : $('#output4').val());
+                         var num_Value5 = parseInt($('#output5').val() == '' ? 1 : $('#output5').val());
+
+                         var totals =  parseFloat(num_Value1 * num_Value2 *  num_Value3 *  num_Value4 *  num_Value5);
+
+                         $('#output_mul').val(totals);
+
+                    });
+                      // clik submit
+
+                         $("#sb1").click(function(){
+                                if($('#output_plus').val()!='' && $('#output_mul').val()!=''){
+                                   $("#_tbody_plus").append('<tr class="info"><td>'+$("#output_plus").val()+'</td></tr>');
+                                  $("#_tbody_multiplied").append('<tr class="info"><td>'+$("#output_mul").val()+'</td></tr>');
+                                } else if($('#output_plus').val()=='' && $('#output_mul').val()==''){
+                                      $('#myModal2').modal('show');
+                                 } else if($('#output_plus').val()!='' && $('#output_mul').val()==''){
+                                      $('#myModal3').modal('show');
+                                  }else if($('#output_plus').val()=='' && $('#output_mul').val()!=''){
+                                      $('#myModal2').modal('show');
+                                  }
+
+
+
+
+                                if($("#output_plus").val() != "" && $("#output_mul").val() != ""){
+
+                                }else if($("#output_plus").val().trim() == ""){
+                                  $("#_modal_plus").modal("show");
+                                }else if($("#output_mul").val().trim() == ""){
+                                  $("#_modal_multiply").modal("show");
+                                }
+
+
+
+
+
+
+                            });
+
+
+
+
+
+                       // clik reset
+                      $('#rs1').click(function(){
+
+
+
+
+
+                          $('#mouseenterValue1').val('').prop('disabled',false).css("background-color", "#ffffff")+ $('#output1').val('');
+                          $('#mouseenterValue2').val('').prop('disabled',false).css("background-color", "#ffffff")+ $('#output2').val('');
+                          $('#mouseenterValue3').val('').prop('disabled',false).css("background-color", "#ffffff")+ $('#output3').val('');
+                          $('#mouseenterValue4').val('').prop('disabled',false).css("background-color", "#ffffff")+ $('#output4').val('');
+                          $('#mouseenterValue5').val('').prop('disabled',false).css("background-color", "#ffffff")+ $('#output5').val('');
+                          $('#output_plus').val('');
+                          $('#output_mul').val('');
+
+                   });
+
+
+
+                       $("#mouseenterValue1").keydown(function (e) {
+                          // Allow: backspace, delete, tab, escape, enter and .
+                          if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+                               // Allow: Ctrl+A, Command+A
+                              (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+                               // Allow: home, end, left, right, down, up
+                              (e.keyCode >= 35 && e.keyCode <= 40)) {
+                                   // let it happen, don't do anything
+                                   return;
+                          }
+                          // Ensure that it is a number and stop the keypress
+                          if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+                              e.preventDefault();
+                          }
+                        });
+
+
+                       $("#mouseenterValue2").keydown(function (e) {
+                          // Allow: backspace, delete, tab, escape, enter and .
+                          if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+                               // Allow: Ctrl+A, Command+A
+                              (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+                               // Allow: home, end, left, right, down, up
+                              (e.keyCode >= 35 && e.keyCode <= 40)) {
+                                   // let it happen, don't do anything
+                                   return;
+                          }
+                          // Ensure that it is a number and stop the keypress
+                          if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+                              e.preventDefault();
+                          }
+                        });
+
+
+                       $("#mouseenterValue3").keydown(function (e) {
+                          // Allow: backspace, delete, tab, escape, enter and .
+                          if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+                               // Allow: Ctrl+A, Command+A
+                              (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+                               // Allow: home, end, left, right, down, up
+                              (e.keyCode >= 35 && e.keyCode <= 40)) {
+                                   // let it happen, don't do anything
+                                   return;
+                          }
+                          // Ensure that it is a number and stop the keypress
+                          if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+                              e.preventDefault();
+                          }
+                        });
+
+
+                       $("#mouseenterValue4").keydown(function (e) {
+                          // Allow: backspace, delete, tab, escape, enter and .
+                          if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+                               // Allow: Ctrl+A, Command+A
+                              (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+                               // Allow: home, end, left, right, down, up
+                              (e.keyCode >= 35 && e.keyCode <= 40)) {
+                                   // let it happen, don't do anything
+                                   return;
+                          }
+                          // Ensure that it is a number and stop the keypress
+                          if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+                              e.preventDefault();
+                          }
+                        });
+
+
+                       $("#mouseenterValue5").keydown(function (e) {
+                          // Allow: backspace, delete, tab, escape, enter and .
+                          if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+                               // Allow: Ctrl+A, Command+A
+                              (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+                               // Allow: home, end, left, right, down, up
+                              (e.keyCode >= 35 && e.keyCode <= 40)) {
+                                   // let it happen, don't do anything
+                                   return;
+                          }
+                          // Ensure that it is a number and stop the keypress
+                          if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+                              e.preventDefault();
+                          }
+                        });
+
+
+
+
+
+
+            });//////function////
+
+
+
+
+  </script>
+</body>
+
+
+
+
+</html>

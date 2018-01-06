@@ -1,0 +1,55 @@
+<html>
+<head>
+				<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+		        <meta charset="utf-8">
+
+
+</head>
+
+<body>
+
+
+<div class="contain">
+<div class="col-sm-12">
+<div class="bs-example">
+    <!-- Button HTML (to Trigger Modal) -->
+    <div class="col-sm-offset-2 col-sm-2">
+    <a href="#" class="btn btn-lg btn-primary">submit</a>
+    </div>
+
+    
+    <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  
+                </div>
+                <div class="modal-body">
+                   <h4>Warning</h4>
+                </div>
+                <div class="modal-footer">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+<script src="jquery-1.11.3.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script type="text/javascript">
+
+
+		$(document).ready(function(){
+			$(".btn").click(function(){
+				$("#myModal").modal('show');
+			});
+});
+</script>
+
+</body>
+</html>
