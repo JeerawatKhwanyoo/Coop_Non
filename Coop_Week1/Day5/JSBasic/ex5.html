@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p id="ob"></p>
+
+
+<script>
+	
+	var object = {	food:"Rice",
+					drink:"Coco",
+					fruit:"Orenge",
+
+				favorite : function(){
+						return this.food+" "+this.drink+" "+this.fruit;
+				}	
+	};
+
+	document.getElementById("ob").innerHTML =  object.favorite();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+					<style>
+						h1 {
+						    text-align: center;
+						}
+
+							h2 {
+							    text-align: left;
+							    font-size: 120%;
+							    font-family: sans-serif;
+
+							}
+
+							h4 {
+							     text-align: center;
+							     text-align: left;
+							     font-size: 75%;
+
+							} 	
+							h5{
+								 text-align: right;
+							    	font-size: 100%;
+							}
+							p.round1 {
+					     		 border: 2px solid red;
+						         border-radius: 5px;
+									}
+
+							
+							</style>
+					
+</head>
+<body>
+
+			<div class="container-fluid">
+
+				<div class="row">
+					<div class="form-group">
+						<div class="col-sm-8">			
+							<div class="col-sm-4">
+							<h2><b><span class="glyphicon glyphicon-bookmark"></span>
+							บันทึก/แก้ไขการลาหยุดงาน</b></h2>
+							</div>
+
+						</div>
+					</div>
+
+						<div class="col-sm-4">			
+
+							<div class="col-sm-offset-5">
+									&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="badge">ไทย</span>|<a href="#">English</a>&nbsp
+									<a href="#" class="btn btn-info btn-sm">
+         					 &nbsp<span class="glyphicon glyphicon-user"></span> 291311 : นายอักรัฐ อังกาบศรี  
+        					</a>			
+							</div>	
+
+
+				
+						</div>
+					</div>
+
+
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="col-sm-8">
+						<p>
+							<div class="from-group">
+							<div class="panel panel-info">
+										<div class="panel-heading" style="background-color: #99ccff">
+											<h3 class="panel-title">
+												 <font color="#000000">เลขที่ใบลา: วันที่บันทึก: เวลา: </font> 
+											</h3>
+										</div>
+
+						<div class="low">
+						      <p></p>
+						      <h2></h2>
+						</div>
+						  	
+					
+					<div class="row">
+						<div class="col-sm-2">
+								<h5><b>ประเภทการลา*</b></h5>
+							</div>
+							<div class="col-sm-9">
+						
+				      		
+								<select class="form-control" id="sel1">
+				       			  <option >กรุณาเลือกประเภทการลา / การปฏิบัติงานนอกสถานที่</option>
+				      		    </select>
+				    	
+				    		</div>	
+				    </div>
+				    
+				
+				    <div class="col-sm-offset-2">
+				    	<br><b>&nbsp&nbspลาสะสม: สิทธิ์คงเหลือ: </b><br/>
+				    	<br><b>&nbsp&nbspกะการทำงาน: </b><br/>
+				    	<br><br/>
+
+				    	
+				    	
+				    </div>
+				   
+
+				    	<div class="row">
+				    		<div class="col-sm-2">
+    								<h5><b>วันที่เริ่มต้น*</b></h5>
+    						</div>
+	        					<div class="col-sm-4">
+	            					<div class="form-group">
+	                					<div class="input-group date" id="datetimepicker1">
+	                   						 <input type="text" class="form-control" />
+	                   							 <span class="input-group-addon">
+	                        						<span class="glyphicon glyphicon-calendar"></span>
+	                    						 </span>
+	                					</div>
+	            					</div>
+	        					</div>
+        								<script type="text/javascript">
+							            			$(function () {
+							                				$("#datetimepicker1").datetimepicker();
+							            				});
+							       			 </script>
+							<div class="col-sm-5">
+								<select class="form-control" id="sel1">
+								<option ></option>
+								</select>
+							</div>
+
+    					</div>
+
+    					<div class="row">
+    						<div class="col-sm-2">
+    								<h5><b>วันที่สิ้นสุด*</b></h5>
+    						</div>
+	        					<div class="col-sm-4">
+	            					<div class="form-group">
+	                					<div class="input-group date" id="datetimepicker1">
+	                   						 <input type="text" class="form-control" />
+	                   							 <span class="input-group-addon">
+	                        						<span class="glyphicon glyphicon-calendar"></span>
+	                    						 </span>
+	                					</div>
+	            					</div>
+	        					</div>
+        								<script type="text/javascript">
+							            			$(function () {
+							                				$("#datetimepicker1").datetimepicker();
+							            				});
+							       			 </script>
+							<div class="col-sm-5">
+								<select class="form-control" id="sel1">
+								<option ></option>
+								</select>
+							</div>
+
+    					</div>
+
+
+				   
+				    	
+
+			  					</div>
+									
+							</div>
+							</p>
+						</div>
+
+
+
+
+
+
+
+						<div class="col-sm-4">
+						<p>
+							<div class="from-group">
+									<table class="table table-bordered">
+			   						<thead style="background-color: #f2f2f2 "  >
+			   								<th>วันจำนวนวันลา</th>
+			   								<th>วัน</th>
+			   								<th>ชั่วโมง</th>
+			   								<th>นาที</th>
+
+			   								
+			   								
+			   						</thead>
+
+			   						<tbody >
+			   							<tr class="something">
+										    <td class="col-md-4">จำนวนวันเวลา</td>
+										    <td class="col-md-1">0 0</td>
+										    <td class="col-md-1">0 0</td>
+										    <td class="col-md-1">0 0</td>
+										</tr>
+										<tr>
+											
+										    <td class="col-md-4">ได้รับเงิน</td>
+										    <td class="col-md-1">0 0</td>
+										    <td class="col-md-1">0 0</td>
+										    <td class="col-md-1">0 0</td>
+										</tr>
+
+										
+										<tr>
+											
+										    <td class="col-md-4">ไม่ได้รับเงิน</td>
+										    <td class="col-md-1">0 0</td>
+										    <td class="col-md-1">0 0</td>
+										    <td class="col-md-1">0 0</td>
+										</tr>
+
+										<tr>
+											
+										    <td class="col-md-4">คงเหลือ</td>
+										    <td class="col-md-1">0 0</td>
+										    <td class="col-md-1">0 0</td>
+										    <td class="col-md-1">0 0</td>
+										</tr>
+
+
+			   						</tbody>
+			   							
+			   						</table>
+
+							</div>
+							</p>
+						</div>
+
+					</div>
+				</div>
+					<!-- -row1- -->
+
+
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="col-sm-8">
+									<div class="from-group">
+										<div class="panel panel-primary">
+											<div class="panel-heading" style="background-color: #99ccff " >
+												<h3 class="panel-title">
+												 <font color="#000000">อนุมัติโดย</font> 
+												</h3>
+											</div>
+
+													<div class="low">
+													      <p></p>
+													      <h2></h2>
+													</div>
+													  	
+						
+						<div class="row">
+							<div class="col-sm-2">
+								<h5><b>ผู้บังคับบัญชา*</b></h5><br>
+							</div>
+						<div class="col-sm-9">		
+								<div class="input-group">
+								      <input type="text" class="form-control SearchBar" placeholder="EX0498 น.ส.พรพิมล มณีวงศ์วัฒนา">
+								      	<span class="input-group-btn">
+								        	<button class="btn btn-defaul SearchButton" type="button">
+								            <span class=" glyphicon glyphicon-search SearchIcon" ></span>
+								        	</button>
+								      </span>
+								</div>
+												    	
+				    		</div>	
+				   		 </div>
+				   		  		<div>
+				   		  			
+				   		  		</div>
+				    				<div class="row">
+				   			 		
+									    <div class="col-sm-2">
+									    	<h5><b>ฝ่ายทรัพยากรณ์มนุษย์*</b></h5>
+
+		
+									    </div>
+
+									   	<div class="col-sm-9">
+									   		
+										        <input class="form-control" id="disabledInput" type="text" placeholder="006162 - นายสุวพันธ์ ชูลิกรณ์" disabled>
+										    
+									   		
+									   	</div>
+
+
+								   </div>
+								 
+								   	<br>
+								   	<div class="row">
+										<div class="form-group">
+									   		<div class="col-sm-2">
+
+									   			<h5><b>เอกสารแนบ*</b></h5>
+									   		</div>
+									   
+
+									   	
+
+									   		<div class="col-sm-9">
+									   			
+												
+												  <div class="input-group">    
+												    <input class="form-control" id="file" name="files[]" multiple="multiple" accept="image/*" type="file">
+												     <div class="input-group-addon">
+												      <span class="glyphicon glyphicon-picture"></span>
+												    </div>
+												  </div>
+
+												
+									   			       
+									   		</div>
+									   	
+								   
+
+
+								   		
+								   	</div>
+
+				    	
+	     									
+
+
+										
+                                	</div>   
+                                	<br>
+								   	<div class="row">
+								   		<div class="form-group">
+								   			<div class="col-sm-offset-2">
+
+											&nbsp&nbsp&nbsp<button type="button" class="btn btn-primary">บันทึก</button>
+											&nbsp<button type="button" class="btn btn-danger">ล้าง</button>
+
+								   			</div>
+
+								   			
+								   		</div>
+								   	</div>
+
+
+								</div>
+							</div>
+						</div>
+
+
+
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
