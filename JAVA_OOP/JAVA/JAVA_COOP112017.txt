@@ -1,0 +1,103 @@
+DAY 1 - 1
+	main program and system out
+	compile and run
+
+	Condition IF , ELSE IF , ELSE 
+	Number Compare VS String Compare
+	LOOP WHILE , FOR
+
+	assignment 1 -> system out print
+	*
+	**
+	***
+	****
+	*****
+	******
+	*******
+
+	assignment 2 -> system out print
+	*
+
+	***
+
+	*****
+
+	*******
+
+	*********
+
+DAY 1 - 2
+	Basic Class Create
+	Basic Attribute
+	Basic Method
+	Basic encapsulation
+
+	Use Class in main program.
+	Use Method in main program.
+	
+	assignment 3 -> create class ATM (Basic)
+		- รับรหัส login ผ่าน system.in
+		- ฝากเงินได้ แสดงยอดคงเหลือ
+		- ถอนเงินได้ แสดงยอดคงเหลือ ถอนเกินจะไม่ยอม
+		- สอบถามยอดได้
+		- ลอกเอ๊าจากโปรแกรม โปรแกรมจะจำค่าไว้จนกว่าจะ kill process
+		example
+		
+		public class ATM
+		{
+			private String username1 = "user001";
+			private String username2 = "user002";
+			private String password1 = "pass01";
+			private String password2 = "pass02";
+			private BigDecimal cashBalance1 = new BigDecimal (0);
+			private BigDecimal cashBalance2 = new BigDecimal (0);
+			
+			private boolean user1IsLogin = false; //สำหรับ check ว่า user login อยู่หรือไม่
+			private boolean user2IsLogin = false; //สำหรับ check ว่า user login อยู่หรือไม่
+			
+			public boolean login(String username , String password){
+				return true;
+			}
+			public BigDecimal deposit(String username , BigDecimal deposit){
+				// check user login user1IsLogin
+				return [cash balance by user];
+			}
+			public BigDecimal withdraw(String username , BigDecimal deposit){
+				// check user login user2IsLogin
+				return [cash balance by user];
+			}
+			
+			public boolean logout(String username){
+				return true;
+			}
+		}
+
+DAY 2 - 1
+	Basic Data Structure List , Map
+	Basic Data Structure Use with object
+	
+	assignment 4 -> create class ATM (Advance)
+	- รับรหัส login ผ่าน system.in
+	- ฝากเงินได้ แสดงยอดคงเหลือ
+	- ถอนเงินได้ แสดงยอดคงเหลือ ถอนเกินจะไม่ยอม
+	- สอบถามยอดได้
+	- ลอกเอ๊าจากโปรแกรม โปรแกรมจะจำค่าไว้จนกว่าจะ kill process
+	
+	- หาก login เป็น admin สามารถเพิ่ม / ลบ user ได้ ไม่จำกัด
+	- ระบบมี function แสดง user ที่สร้างไว้ทั้งหมด
+	- ระบบมี function แสดง ยอดเงินของแต่ละ user ที่เคลื่อนไหวเข้าออก
+
+DAY 3 to DAY 6
+	assignment 5 -> เครื่องคิดเลข ระบบจะรับข้อมูล String ของ Stmt โดยใช้ วงเล็บ ได้ ใช้ + ,- , * , / ได้
+	** ห้ามใช้ class ที่ผู้อื่นทำไว้แล้ว ให้เขียนทั้งหมดเอง โดยใช้คำสั่งพื้นฐาน
+	- รับข้อมูลผ่าน system in
+	example input:1+1+4+(1*5)
+	out put :1+1+4+5
+	out put :11
+	
+	example input:1+1+(4*3)+2+((4*5)*2)+7
+	out put : 1+1+12+2+(20*2)+7
+	out put : 1+1+12+2+40+7
+	out put : 73
+	
+	หากมีวงเล็บไม่ครบถ้วนให้ตี error แล้วหยุดการทำงาน แล้วแจ้งจุดที่ผิดพลาด
