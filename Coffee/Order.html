@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link type="text/css" rel="stylesheet" href="jsgrid.min.css" />
+	<link type="text/css" rel="stylesheet" href="jsgrid-theme.min.css" />
+	<script type="text/javascript" src="jsgrid.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+	<script src="jquery-1.11.3.min.js"></script>
+
+	<style type="text/css">
+		body {
+			background-color: #d2b48c;
+
+			font-family: sans-serif;
+		}
+	</style>
+	<title>Order</title>
+	<img src="img/a.png" align="left" width="60" height="60">
+	<br>
+	<h2>Please Order A Cup of Coffee</h2>
+	<br/>
+
+
+</head>
+
+
+<body>
+
+	<div>
+
+		Member Name:
+		<input type="member" style="background: #ffffff" />
+		<br> Password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="password" style="background: #ffffff">
+		<br/>
+		<br>
+		<br/>
+	</div>
+
+	<div>
+
+		<form>
+			Choose your cup
+			<ul>
+				<li>
+					<input type="radio" name="a" />
+					<b>House Blend,</b>$1.49 A smooth, mild blend of coffees from Mexico, Bolivia andGuatemala.</li>
+				<li>
+					<input type="radio" name="a" />
+					<b>Mocha Cafe Latte,</b> $2.35 Espresso, steamed milk and chocolate syrup</li>
+				<li>
+					<input type="radio" name="a" />
+					<b>Cappuccino,</b> 35 baht A mixture of espresso, steamed milk and foam.</li>
+				<li>
+					<input type="radio" name="a" />
+					<b>Thai Tea,</b> 25 baht A drink made with black tea, condensed milk.</li>
+
+			</ul>
+		</form>
+		<div>
+			<form>
+				<fieldset>
+					<legend>Extra:</legend>
+					<br>
+					<input type="checkbox" />Whipped Cream
+					<br/>
+					<br>
+					<input type="checkbox" />Sweet
+					<br/>
+					<br>
+					<input type="checkbox" />Shots
+					<br/>
+					</fields.red { background-color:red; }et>
+			</form>
+		</div>
+
+		<div>
+			<br>Special Request:
+			<br/>
+			<form action="/home/non/Desktop/Coop/Coop_Week1/Day1/Coffee/coffee.html" method="post" id="frm1">
+
+				<textarea border="" style="border-color:" cols="80" rows="10" bgcolor="#b33c00" type="text" name="fname" required></textarea>
+				<br>
+				<input type="submit" value="Submit">
+				<input type="button" onclick="myFunction()" value="Reset">
+				<br/>
+			</form>
+		</div>
+
+
+		<a href="coffee.html">
+			<h1 style="font-family:sans-serif;">Back</h1>
+		</a>
+
+
+		<button id="myBtn">Try it</button>
+
+
+
+
+		<p id="demo"></p>
+
+		<script>
+
+		$(document).ready(function () {
+
+document.getElementById("myBtn").addEventListener("click", displayDate);
+
+			function displayDate() {
+				document.getElementById("demo").innerHTML = Date();
+			}
+
+
+
+
+
+			function validateForm() {
+				var x = document.forms["myForm"]["fname"].value;
+				if (x == "") {
+					alert("Name must be filled out");
+					return false;
+				}
+			}
+
+
+
+
+
+		$('input[type="member]').click(function () {
+				$(this).toggleClass('red');
+			});
+			function myFunction() {
+				document.getElementById("frm1").reset();
+			}
+
+
+
+
+
+				$("textarea").dblclick(function () {
+					alert($("textarea").val());
+				});
+
+
+
+
+
+				$("input").focus(function () {
+					$(this).css("background-color", "black");
+				});
+
+				$("input").blur(function () {
+					$(this).css("background-color", "#ffffff");
+				});
+
+
+
+
+});
+		</script>
+
+
+</body>
+
+</html>
